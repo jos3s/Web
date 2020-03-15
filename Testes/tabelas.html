@@ -1,0 +1,73 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Tabela</title>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            table{
+                border-collapse: collapse;
+                width: 80%;
+                margin: auto;
+            }
+            th{
+                border: 2px solid red;
+                padding: 10px;
+            }
+            td{
+                border: 1px solid red;
+                text-align: center;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Tabela de preço dos cursos </caption>
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Curso</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Valores sujeitos a alterações sem aviso prévio</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Design</td>
+                    <td>Design Gráfico</td>
+                    <td>R$ 1000.00</td>
+                </tr>
+                <tr>
+                    
+                    <td>Photoshop</td>
+                    <td>R$ 1000.00</td>
+                </tr>
+                <tr>
+                    
+                    <td>CoreDraw</td>
+                    <td>R$ 1000.00</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Web</td>
+                    <td>HTML e CSS</td>
+                    <td>R$ 1000.00</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>R$ 1000.00</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>R$ 1000.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

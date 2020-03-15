@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Formulario</title>
+        
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form action="#" method="GET" class="form-login">
+            <fieldset>
+                <legend>Dados</legend>
+                <label>Email</label>
+                <input type="email" maxlength="30" required placeholder="emai@exemplo.com">
+                <label>Numero de filhos</label>
+                <input type="number" min="0" max="1000" placeholder="0">
+                <label>Nascimento</label>
+                <input type="date">
+                <p>Sexo</p>
+                <label>
+                    <input type="radio" name="sexo" value="M">
+                    Masculino
+                </label>
+                
+                <label>
+                    <input type="radio" name="sexo" value="F">
+                    Feminino
+                </label>
+                <label>Estado</label>
+                    <select name="estado">
+                        <option value="0">Selecione</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PE">Pernambuco</option>
+                    </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de interesse</legend>
+                <label>
+                    <input type="checkbox" name="html" value="html">HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="css" value="css">CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="jv" value="jv">JavaScript
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea style="resize: none;" name="msg" cols="30" rows="10"></textarea>
+                <textarea style="resize: none;" name="msg" cols="30" rows="10" readonly>Resmo dos seus ojetivos</textarea>
+                <label>
+                    <input type="checkbox" checked>Li e aceito
+                </label>
+                <input type="range" min="1" max="5" step="1">
+                <input type="time">
+                <input type="color">
+
+                <select multiple size="3">
+                    <option value="0">Selecione</option>
+                    <option value="1">Primeiro</option>
+                    <option value="2">Segundo</option>
+                </select>
+            </fieldset>
+            <input type="submit" value="Confirmar" >
+            <input type="button" value="Botão" >
+            <input type="reset" value="Limpar dados" >
+        </form>
+    </body>
+</html>
