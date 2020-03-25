@@ -64,6 +64,13 @@ pre code{
     display: block;
 }
 
+blockquote p{
+    margin-bottom: .5em;
+}
+blockquote p:last-child{
+    margin-bottom: 0;
+}
+
 ul, ol{
     margin: 0;
     padding: 0;
@@ -71,6 +78,13 @@ ul, ol{
 }
 li{
     padding-left: .5em;
+}
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display:block;
 }
 .ul-alternate{
     list-style: none;
@@ -238,9 +252,18 @@ input[type="checkbox"], input[type="radio"]{
     border-radius: 5px;
 }
 
+.imgEsq{
+    float: left;
+    margin: 1em;
+}
+.imgDir{
+    float: right;
+    margin: 1em;
+}
+
 .m-footer{
     position: fixed;
-    bottom:10px;
+    bottom:0;
     width: 35%;
     left: 0;
     padding: 0 54px 72px 0;
