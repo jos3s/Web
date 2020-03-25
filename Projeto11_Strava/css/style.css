@@ -85,12 +85,12 @@ li{
     color: #49bf9d;
 }
 
-input, label, textarea{
+input, label, textarea, select{
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
 }
-input, textarea{
+input, textarea, select{
     background: #ccc;
     padding: 15px;
     border-radius: 5px;
@@ -105,6 +105,9 @@ input:focus, textarea:focus{
 }
 textarea{
     height: 8em;
+}
+input[type="checkbox"], input[type="radio"]{
+    width: auto;
 }
 
 .btn-padrao{
