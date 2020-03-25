@@ -81,7 +81,27 @@ li{
     font-size: 2em;
     color: #49bf9d;
 }
-
+.btn-padrao{
+    background-color: #49bf9d;
+    border: 2px solid #49bf9d;
+    color: white;
+    border-radius: 5px;
+    padding: .75em 1.5em;
+    font-size: .8em;
+    display: inline-block;
+}
+.btn-padrao-stroke{
+    background-color: white;
+    border-color: #efefef;
+    color: inherit;
+}
+.btn-padrao-pequeno{
+    font-size: .65em;
+}
+.btn-padrao-cheio{
+    display: block;
+    text-align: center;
+}
 .m-header{
     position: fixed;
     top: 0;
@@ -119,10 +139,10 @@ li{
     padding: 124px 54px 72px;
     box-sizing: border-box;
 }
+
 .row{
     overflow: auto;
 }
-
 .col-2{
    width: 50%;
    float: left; 
