@@ -238,6 +238,28 @@ input[type="checkbox"], input[type="radio"]{
     border-radius: 5px;
 }
 
+.m-footer{
+    position: fixed;
+    bottom:10px;
+    width: 35%;
+    left: 0;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+.m-footer ul{
+    list-style: none;
+    font-size: 1em;
+}
+.m-footer li, a{
+    color: rgba(255, 255,255, .5);
+}
+.m-footer a{
+    border-bottom-color: transparent;
+}
+.m-footer a:hover{
+    color:#5ddeb9;
+}
  /*grid*/
 .row{
     overflow: auto;
