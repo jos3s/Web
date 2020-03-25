@@ -15,6 +15,7 @@ a:hover{
 p{
     margin: 0 0 2em;
 }
+
 h1,h2,h3,h4,h5,h6{
     color: #787878;
     font-weight: normal;
@@ -38,6 +39,7 @@ h5{
 h6{
     font-size: 14px;
 }
+
 sub,sup{
     font-size: 12px;
 }
@@ -58,6 +60,7 @@ code{
 pre code{
     display: block;
 }
+
 ul, ol{
     margin: 0;
     padding: 0;
@@ -81,6 +84,7 @@ li{
     font-size: 2em;
     color: #49bf9d;
 }
+
 .btn-padrao{
     background-color: #49bf9d;
     border: 2px solid #49bf9d;
@@ -102,6 +106,36 @@ li{
     display: block;
     text-align: center;
 }
+
+.tba{
+    width: 100%;
+    margin: 0 0 2em 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+.tba td{
+    padding: .75em;
+}
+.tba th{
+    padding: .75em;
+    background:#ccc ;
+}
+.tba tbody tr td{
+    border-bottom: 1px solid #ccc;
+}
+.tba tbody tr:first-child td{
+    border-top: 1px solid #ddd;
+}
+.tba tbody tr:last-child td{
+    border-bottom: 1px solid #666;
+}
+.tba tbody tr:nth-child(even) td{ 
+    background: #ddd;
+}
+.tba-alternate tbody td{
+    border: 1px solid #ddd;
+}
+
 .m-header{
     position: fixed;
     top: 0;
