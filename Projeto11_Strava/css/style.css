@@ -115,18 +115,29 @@ input[type="checkbox"], input[type="radio"]{
 
 .btn-padrao{
     background-color: #49bf9d;
-    border: 2px solid #49bf9d;
+    border: 3px solid #49bf9d;
     color: white;
     border-radius: 5px;
     padding: .75em 1.5em;
     font-size: .8em;
     display: inline-block;
     width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+.btn-padrao:hover{
+    background-color: #5ddeb9;
+    border-color: transparent;
 }
 .btn-padrao-stroke{
     background-color: white;
     border-color: #efefef;
     color: inherit;
+}
+.btn-padrao-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
 }
 .btn-padrao-pequeno{
     font-size: .65em;
