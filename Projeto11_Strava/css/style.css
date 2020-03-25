@@ -217,6 +217,16 @@ input[type="checkbox"], input[type="radio"]{
     border-radius: 10px;
     overflow: hidden;
 }
+
+.galeria img{
+    width: 100%;
+}
+.galeriaThumb img, .galeria img{
+    margin-bottom: 2%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
  /*grid*/
 .row{
     overflow: auto;
@@ -238,5 +248,7 @@ input[type="checkbox"], input[type="radio"]{
 .col1-3{
     width: 32%;
     float: left;
-    margin-left: 3%;
+}
+.col1-3:nth-child(3n-1){ /* !tô usando um formula de multiplo de 3 menos 1*/
+    margin: 0 2%;
 }
