@@ -4,16 +4,19 @@
         <meta charset="UTF-8">
         <meta name="author" content="José Ulisses">
         <title>Strava</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ff7538096c.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="m-header">
-            <a href="index.html" class="m-headerLink"><img src="" alt="A"></a>
-            <h1>
+            <a href="index.html" class="m-headerLink"><img src="img/avatar.jpg" alt="A"></a>
+            <h1 class="m-header-infoPerfil">
                 Testes e mais teste<br>
                 <strong>José Ulisses</strong><br>
                 uma pequena frase aleatoria.
+                <br>Link <a href="#" class="m-header-link">teste</a>
             </h1>
         </header>
 
@@ -73,6 +76,7 @@
                 <a href="#" title="Veja mais projetos" class="btn-padrao">Veja mais projetos</a>
             
             </section>
+            
             <section class="m-contendSection">
 
                 <h3>Entre em contato</h3>
@@ -102,61 +106,87 @@
                 </address>
 
             </section>
+            
             <section class="m-contendSection">
                 <h3>Elementos</h3>
                 
                 <h4>Texto</h4>
-                <p>Ut ut <b>excepteur</b> tempor <strong>consectetur</strong> id culpa <i>anim</i>sint eu <em>eiusmod</em> incididunt anim. Nisi commodo commodo id ipsum quis. Sunt nostrud dolore dolore anim consequat elit dolor nisi id mollit deserunt ex. Labore cillum et <sub>dolore tempor</sub> cillum <sup>Lorem et consectetur</sup> qui. Excepteur anim pariatur amet minim amet reprehenderit. Laboris <u>labore sit Lorem</u> esse dolore. Aliquip non <code>minim incididunt</code> do incididunt eiusmod laboris qui minim laborum<a href="#">minim incididunt</a></p>
+                <p>Ut ut <b>excepteur</b> tempor <strong>consectetur</strong> id culpa <i>anim</i>sint eu <em>eiusmod</em> incididunt anim. Nisi commodo commodo id ipsum quis. Sunt nostrud dolore dolore anim consequat elit dolor nisi id mollit deserunt ex. Labore cillum et <sub>dolore tempor</sub> cillum <sup>Lorem et consectetur</sup> qui. Excepteur anim pariatur amet minim amet reprehenderit. Laboris <u>labore sit Lorem</u> esse dolore. Aliquip non <code>minim incididunt</code> do incididunt eiusmod laboris qui minim laborum <a href="#">minim incididunt</a></p>
+
+                <h1>Titulo h1</h1>
+                <h2>Titulo h2</h2>
+                <h3>Titulo h3</h3>
+                <h4>Titulo h4</h4>
+                <h5>Titulo h5</h5>
+                <h6>Titulo h6</h6>
 
                 <h4>Citação</h4>       
                 <blockquote cite="https://www.lipsum.com/">
-                    <p>Occaecat non occaecat do elit exercitation consequat esse sint. Anim et sit ex commodo qui nisi Lorem. Cillum pariatur id fugiat fugiat ex commodo sint mollit aute reprehenderit dolor. Aliqua id eu elit non ad nostrud non nostrud. Aliqua eiusmod ipsum sint nulla fugiat sit eiusmod minim nisi sint ex consectetur dolor. Minim reprehenderit minim dolore adipisicing duis aute incididunt sit ad. Nisi sunt nulla tempor nisi.</p>
+                    Occaecat non occaecat do elit exercitation consequat esse sint. Anim et sit ex commodo qui nisi Lorem. Cillum pariatur id fugiat fugiat ex commodo sint mollit aute reprehenderit dolor. Aliqua id eu elit non ad nostrud non nostrud. Aliqua eiusmod ipsum sint nulla fugiat sit eiusmod minim nisi sint ex consectetur dolor. Minim reprehenderit minim dolore adipisicing duis aute incididunt sit ad. Nisi sunt nulla tempor nisi.
                 </blockquote>    
                 <p>Um outro exemplo de citação
                     <q cite="#">Um site aleatorio sendo citado</q>
                 </p>
 
                 <h4>Preformatado</h4>
-                <pre>Teste da 
+                <pre>
+                    <code>
+                        Teste da 
                     tag 
                     pre
+                    </code>
                 </pre> <!--Posso usar pra formata um pedaço de código mantendo a formaçtação-->
-
                 <h4>Listas</h4>
-                <h5>Não Ordenada</h5>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-                <h5>Ordenada</h5>
-                <ol>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                </ol>
-                <h5>Alternate</h5>
-                <ul class="ul-alternate">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-                <h5>Icons</h5>
-                <ul>
-                    <li><i class="fab fa-github"></i></li>
-                    <li><i class="fab fa-linkedin"></i></li>
-                </ul>
+                <div class="row">
+                    <div class="col-2">
+                        <h5>Não Ordenada</h5>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                        <h5>Ordenada</h5>
+                        <ol>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                        </ol>
+                    </div>
+                    <div class="col-2">
+                        <h5>Alternate</h5>
+                        <ul class="ul-alternate">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                        <h5>Icons</h5>
+                        <ul class="ul-icons">
+                            <li><i class="fab fa-github"></i></li>
+                            <li><i class="fab fa-linkedin"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                
 
                 <h5>Actions</h5>
-                <p> <a href="#" class="btn-padrao">Padrao</a>
-                    <a href="#" class="btn-padrao btn-padrao-stroke">Padrao</a></p>
-                <p> <a href="#" class="btn-padrao btn-padrao-pequeno">Padrao</a>
-                    <a href="#" class="btn-padrao btn-padrao-pequeno btn-padrao-stroke">Padrao</a></p>
-                <p> <a href="#" class="btn-padrao btn-padrao-cheio">Padrao</a>
-                    <a href="#" class="btn-padrao btn-padrao-cheio btn-padrao-stroke">Padrao</a></p>
-                <p> <a href="#" class="btn-padrao btn-padrao-cheio btn-padrao-pequeno">Padrao</a>
-                    <a href="#" class="btn-padrao btn-padrao-cheio btn-padrao-pequeno btn-padrao-stroke">Padrao</a></p>
-                
+                <div class="row">
+                    <div class="col-2">
+                        <p> <a href="#" class="btn-padrao">Padrao</a>
+                            <a href="#" class="btn-padrao btn-padrao-stroke">Padrao</a>
+                        </p>
+                        <p> <a href="#" class="btn-padrao btn-padrao-pequeno">Padrao</a>
+                            <a href="#" class="btn-padrao btn-padrao-pequeno btn-padrao-stroke">Padrao</a>
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <p> <a href="#" class="btn-padrao btn-padrao-cheio">Padrao</a>
+                            <a href="#" class="btn-padrao btn-padrao-cheio btn-padrao-stroke">Padrao</a>
+                        </p>
+                        <p> <a href="#" class="btn-padrao btn-padrao-cheio btn-padrao-pequeno">Padrao</a>
+                            <a href="#" class="btn-padrao btn-padrao-cheio btn-padrao-pequeno btn-padrao-stroke">Padrao</a>
+                        </p>
+                    </div>
+                </div>
                 <h5>Tabela</h5>
                 <table class="tba">
                     <thead>
@@ -281,7 +311,33 @@
                 <textarea placeholder="Deixe a sua mensagem" id="msg"> </textarea>
                 <input type="submit" class="btn-padrao" value="Enviar" >
                 <input type="reset" class="btn-padrao-cheio"value="Limpar">
-                
+            </section>
+            
+            <section>
+                <h3>Imagens</h3>
+
+                <div class="galeria">
+                    <img src="img/fulls/01.jpg">
+                </div>
+                <div class="galeriaThumb">
+                    <img src="img/thumbs/01.jpg">
+                    <img src="img/thumbs/02.jpg">
+                    <img src="img/thumbs/03.jpg">
+                    <img src="img/thumbs/04.jpg">
+                    <img src="img/thumbs/05.jpg">
+                    <img src="img/thumbs/06.jpg">
+                    <img src="img/thumbs/01.jpg">
+                    <img src="img/thumbs/04.jpg">
+                </div>
+                <h4> Left &amp; Right</h4>
+                <p> 
+                    <img src="img/avatar.jpg" class="imgEsq">
+                    Ut ea aute enim do nisi tempor nulla eiusmod deserunt est irure sint. Tempor cillum Lorem officia id elit adipisicing aliquip sunt irure aliquip fugiat enim fugiat. Ad aute commodo reprehenderit in anim labore culpa. Qui dolor nulla irure quis laborum sunt exercitation ea consequat. Ullamco cillum ex occaecat nisi incididunt. Irure nulla laboris consectetur mollit.Quis laborum aute ut adipisicing anim esse tempor Lorem enim. Cillum incididunt ullamco nostrud sint aliquip nulla elit duis consectetur incididunt culpa ea culpa consequat. Velit incididunt in quis commodo in. Commodo ea voluptate veniam nostrud id aliqua magna.Irure dolore deserunt enim est exercitation voluptate voluptate dolor et occaecat irure nostrud sint minim. Qui ex velit commodo exercitation consequat commodo nisi. Incididunt laborum irure minim ullamco fugiat. Do eiusmod adipisicing labore veniam irure et ullamco magna. Et Lorem commodo dolor adipisicing ad esse anim quis tempor eiusmod qui. Occaecat tempor consectetur voluptate dolor id aliquip duis incididunt anim anim dolor.
+                </p>
+                <p> 
+                    <img src="img/avatar.jpg" class="imgDir">
+                    Ut amet aute esse cillum do culpa in reprehenderit ad adipisicing Lorem culpa. Irure reprehenderit esse irure veniam deserunt sunt excepteur occaecat do aliquip. Et voluptate excepteur occaecat ea officia ipsum qui ex magna ipsum deserunt deserunt nulla eu. Aliqua esse sit sit non cupidatat eu dolor ex incididunt.Incididunt tempor aute est ad id adipisicing sunt aute laboris occaecat anim. Officia est nisi deserunt proident. Nostrud consequat pariatur laboris aliqua incididunt exercitation mollit tempor. Eu ad cupidatat irure anim.Tempor amet eiusmod dolor ut. Culpa ea sunt occaecat fugiat Lorem. Exercitation consectetur mollit sit laboris duis sit incididunt quis eu pariatur labore. Elit commodo anim in sunt nisi Lorem veniam commodo esse mollit deserunt proident nostrud aliquip. Laborum sit laborum ipsum excepteur cillum deserunt anim do quis duis nostrud. Incididunt voluptate fugiat ad elit nulla veniam aliquip aute aliqua amet id non. Officia laboris laboris non eiusmod adipisicing officia nostrud elit aliqua.
+                </p>
             </section>
         </main>
         <footer class="m-footer">
