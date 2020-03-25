@@ -15,6 +15,9 @@ a:hover{
 p{
     margin: 0 0 2em;
 }
+img{
+    max-width: 100%;
+}
 
 h1,h2,h3,h4,h5,h6{
     color: #787878;
@@ -136,6 +139,10 @@ input[type="checkbox"], input[type="radio"]{
     text-align: center;
 }
 
+.imgLink{
+    border: 0;
+}
+
 .tba{
     width: 100%;
     margin: 0 0 2em 0;
@@ -202,7 +209,14 @@ input[type="checkbox"], input[type="radio"]{
     padding: 124px 54px 72px;
     box-sizing: border-box;
 }
-
+.m-headerLink img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.trabalhoRecente-card img{
+    border-radius: 10px;
+    overflow: hidden;
+}
  /*grid*/
 .row{
     overflow: auto;
