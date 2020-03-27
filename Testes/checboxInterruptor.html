@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+        <style>
+            label{
+                margin: 25px;
+            }
+            input[type="checkbox"]{
+                width: 0px;
+                height: 1px;
+                overflow: hidden;
+                visibility: hidden;
+                display: inline-block;
+                margin: 0;
+            }
+            span.int{
+                display: inline-block;
+                width: 40px;
+                height: 20px;
+                background-color: #ddd;
+                border-radius: 25px;
+                position: relative;
+            }
+            span.int::before{
+                content: "";
+                width: 15px;
+                height: 15px;
+                background-color: #555;
+                display: inline-block;
+                margin: 2.5px;
+                border-radius: 50%;
+                transition: all 0.5s ease-in-out;
+            }
+            input:checked + span::before {
+                transform: translateX(20px);
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+       <label>
+           <input type="checkbox">
+           <span class="int"></span>
+           Esporte
+       </label>
+       <label>
+           <input type="checkbox">
+           <span class="int"></span>
+           Religião
+       </label>
+       <label>
+           <input type="checkbox">
+           <span class="int"></span>
+           Politica
+       </label>
+    </body>
+</html>
