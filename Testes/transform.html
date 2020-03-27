@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            html, body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .div1{
+                width: 150px;
+                height: 50px;
+                background: red;
+                transform: translate(150px,50%);
+            }
+            .div2{
+                width: 150px;
+                height: 50px;
+                background: blueviolet;
+                position: relative;
+                left: 50%;
+            }
+            .div3{
+                width: 50%;
+                overflow: hidden;
+                border: 3px solid black;
+            }
+            .div3Int{
+                background: yellow;
+                transform: translate(80%,25px);
+            }
+            .div4{
+                width: 50%;
+                overflow: hidden;
+                border: 3px solid black;
+            }
+            .div4Int{
+                background: yellow;
+                transform: rotate(90deg);
+            }
+            .div5{
+                width: 50%;
+                overflow: hidden;
+                border: 3px solid black;
+            }
+            .div5Int{
+                background: yellow;
+                transform: rotate(45deg);
+                transform-origin: left top;
+            }
+            .div6{
+                width: 50%;
+                overflow: hidden;
+                border: 3px solid black;
+            }
+            .div6Int{
+                background: yellow;
+                transform: rotate(30deg) translate(50px );
+            }
+            .div7{
+                width: 50%;
+                overflow: hidden;
+                border: 3px solid black;
+            }
+            .div7Int{
+                background: yellow;
+                transform: translate(50px) rotate(30deg) ;
+            }
+            .div8{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                transform: skewX(10deg) skewY(50deg);
+            }
+            .div9{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                transform: scale(.5) translateX(50%);
+                transition: transform 2s;
+            }
+            .div9:hover{
+                transform: scale(2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">divi 1</div>
+        <div class="div2">divi 2</div>
+        <hr>
+        <div class="div3">
+            <div class="div3Int">conteudo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+            Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+        </div>
+        <hr>
+        <div class="div4">
+            <div class="div4Int">conteudo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+            Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+        </div>
+        <hr>
+        <div class="div5">
+            <div class="div5Int">conteudo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+            Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+        </div>
+        <hr>
+        <div class="div6">
+            <div class="div6Int">conteudo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+            Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+        </div>
+        <hr>
+        <div class="div7">
+            <div class="div7Int">conteudo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+            Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+        </div>
+        <hr>
+        <div class="div8">divi 8</div>
+        <div class="div9">divi 9</div>
+    </body>
+</html>
