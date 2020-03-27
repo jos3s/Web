@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            article:nth-child(1) a{
+                color: red;
+            }
+            article:nth-child(3) > p{
+                color: yellow;
+            }
+            article:nth-child(5) h3 + p{ /* !apenas o p apos o h3*/
+                color: green;
+            }
+            article:nth-child(7) h3 ~ p{ /* !todos os p apos o h3*/
+                color: orange;
+            }
+            article:not(.destaque){ /* pega todos menos o com a classe destaque*/
+                color: coral;
+            }
+            .destaque{
+                background: yellow;
+            }
+            a[href="#"]{
+                opacity: .2;
+            }
+            a[href^="http"]{
+                color: red;
+            }
+            a[href$=".html"]{
+                color: violet;
+                text-decoration: none;
+            }
+            a[title]{
+                color: cornflowerblue;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+        </article>
+        <hr> <!-- *esse é o terceiro filho-->
+        <article>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+        </article>
+        <hr> <!-- *esse é o quinto filho-->
+        <article>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+        </article>
+        <hr> <!-- *esse é o setimo filho-->
+        <article>
+            <p>Esse não pega a cor</p>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+        </article>
+        <hr> <!-- *esse é o nono filho-->
+        <article class="destaque">
+            <p>Esse não pega a cor</p>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+        </article>
+
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="https://google.com">link externo</a></li>
+            <li><a href="../Projeto1-5/index1.html">link interno</a></li>
+            <li><a href="../Projeto1-5/index1.html" title="titulo">link interno com title</a></li>
+        </ul>
+    </body>
+</html>
