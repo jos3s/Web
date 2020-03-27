@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <meta name="keywords" content="portifolio, jos3s, José Ulisses">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            div{
+                border: 2px solid red;
+                padding: 25px;
+                position: relative;
+            }
+            div:before{
+                content: "texto antes";
+                background: #ccc;
+            }
+            div:after{
+               content: "";
+               background: red;
+               width: 35px;
+               height: 35px;
+               display: inline-block;
+               position: absolute;
+               bottom: 0;
+               right: 0;
+            }            
+        </style>
+    </head>
+    <body>
+        <div>
+            Occaecat velit tempor labore nulla enim eu laborum pariatur.
+        </div>
+        <article>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">link com <b>negrito</b></a></p>
+        </article>
+
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="https://google.com">link externo</a></li>
+            <li><a href="../Projeto1-5/index1.html">link interno</a></li>
+            <li><a href="../Projeto1-5/index1.html" title="titulo">link interno com title</a></li>
+        </ul>
+    </body>
+</html>
