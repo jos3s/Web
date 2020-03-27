@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+        <style>
+            input[type="checkbox"]{
+                width: 100px;
+                height: 100px;
+            }
+            input[type="checkbox"]:checked{
+                width: 20px;
+                height: 20px;
+            }
+            button:disabled{
+                background: blue;
+            }
+            p:empty:before{
+                content: "paragrafo vazio n dá";
+            }
+            input[type="text"]:focus{
+                background: #ccc;
+            }
+            a:focus, a:hover, div:focus {
+                background: red;
+            }
+            input::placeholder{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <labe>
+            <input type="checkbox" value="sim">Aceito o contrato</labe>
+        </labe>  
+        <button>Vai</button>
+        <button disabled>Volta</button>
+        <div class="ola hello"></div>
+        <p>paragarafo 1</p>
+        <p> </p>
+        <p></p>
+        <hr>
+
+        <input type="text">
+        <input type="text" placeholder="placeholder">
+        <input type="text" value="valor inicial">
+
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+        </ul>
+
+        <div tabindex="1">div 1</div>
+        <div tabindex="2">div 2</div>
+        <div tabindex="3">div 3</div>
+    </body>
+</html>
