@@ -20,6 +20,12 @@ h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
     display: block;
 }
 
+.clearfix::after, .row::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
 .siteHeader{
     text-align: center;
 }
@@ -48,6 +54,7 @@ h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
 .siteMainBanner{
     text-align: center;
     background: #f6f6f6;
+    padding: 2em;
 }
 .siteMainTitulo{
     color: #612674;
@@ -118,4 +125,42 @@ h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
 }
 .siteFooterIcons a:hover{
     color: rgb(202, 202, 202);
+}
+
+@media screen and (min-width: 46.25em){
+    .siteHeaderLogo{
+        float: left;
+    }
+    .siteNav{
+        background: transparent;
+        float: right;
+        margin-top: 1.6em;
+    }
+    .siteNav ul{
+        margin: 0; padding: 0;
+    }
+    .siteNav li{
+        display: inline-block;
+    }
+    .siteNav a{
+        color: #713a84;
+        font-weight: bold;
+    }
+    .siteNav a:hover{
+        background: #e7d9f5;
+    }
+    .siteMainBanner{
+        background: #521a66;
+    }
+    .siteMainTitulo, .siteMainSubtitulo{
+        color: white;
+    }
+    .siteMainConteudoArticle .btn{
+        float: right;
+    }
+    .col1-4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
 }
