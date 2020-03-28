@@ -1,0 +1,10 @@
+body{
+    font-family: serif;
+    color: rebeccapurple;
+    font-size: 16px;
+}
+a::after{
+    content: "( " attr(href)  " )";
+    display: inline-block;
+    margin: 0 10px;
+}
