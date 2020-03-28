@@ -13,6 +13,13 @@ h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
 }
 .btn:hover{ background: #37a0a0; }
 
+.hidden{
+    width: 0; height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
 .siteHeader{
     text-align: center;
 }
@@ -87,4 +94,28 @@ h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
     color: #652e79;
     text-transform: uppercase;
     font-weight: normal;
+}
+
+.siteFooter{
+    background: #25303e;
+    color:white;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.siteFooterIcons{
+    background: #303d4c;
+    padding: .5em;
+}
+
+.siteFooterIcons li{
+    display: inline-block;
+    margin: 0 1em;
+}
+.siteFooterIcons a{
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.siteFooterIcons a:hover{
+    color: rgb(202, 202, 202);
 }
