@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
     background: #7c3792;
 }
 
-.siteMainDestaque{
+.siteMainBanner{
     text-align: center;
     background: #f6f6f6;
 }
@@ -53,21 +53,38 @@ h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
     line-height: 1.5em;
 }
 
-.siteMainConteudo{
+.siteMainDestaque{
     background: #f6f6f6;
     text-align: center;
     padding: 2em;
 }
-.siteMainConteudoT{
+.siteMainDestaqueT{
     font-size: 1.25em;
     color: #652e79;
     text-transform: uppercase;
 }
-.siteMainConteudo p{
+.siteMainDestaque p{
     line-height: 1.5;
     color: #222;
 }
-.siteMainConteudo span[class^=icon]{
+.siteMainDestaque span[class^=icon]{
     font-size:3.5em;
     color: #652e78;
+}
+
+.siteMainConteudo{
+    padding: 2em;
+}
+.siteMainConteudo p{
+    line-height: 1.2;
+}
+.siteMainConteudoArticle{
+    margin-bottom: 3.5em;
+}
+.siteMainConteudoTitulo{
+    letter-spacing: .2em;
+    font-size: 1.25em;
+    color: #652e79;
+    text-transform: uppercase;
+    font-weight: normal;
 }
