@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+html{ font-family: sans-serif; }
+h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
+
+.btn{
+    display: inline-block;
+    padding: .75em 2.5em;
+    background: #58c4c4;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #37a0a0;
+}
+
+.siteHeader{
+    text-align: center;
+}
+.siteNav{
+    background-color: #612674;
+    text-align: center;
+}
+.siteHeaderLogo{
+    margin: .5em;
+}
+.siteNav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.siteNav a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+.siteNav a:hover{
+    background: #7c3792;
+}
+
+.siteMainDestaque{
+    text-align: center;
+    background: #f6f6f6;
+}
+.siteMainTitulo{
+    color: #612674;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+.siteMainSubtitulo{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5em;
+}
