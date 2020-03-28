@@ -164,3 +164,10 @@ h1,h2,h3,h4,h5,h6{ font-family: "Oxygen"; }
         float: left;
     }
 }
+@media screen and (min-width: 62.5em){
+    .siteMainBanner{
+        background:#521a66 url("../img/bg_topo_1198x670.jpg");
+        height: 15em;
+        padding-top: 15em;
+    }
+}
