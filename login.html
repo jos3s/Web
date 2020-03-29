@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Login</title>
+        <style>
+             html, body{
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            body{
+                height: 100%;
+                font-family: sans-serif;
+                background-image: linear-gradient(coral, indigo);
+            }
+            .login{
+                background-color: white;
+                width: 250px;
+                height: auto;
+                margin: 150px auto;
+            }
+            .login-input{
+                margin: 10px 0;
+                display: block;
+                padding: 5px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .login-btn{
+                border-radius: 14px 2px 14px 2px;
+                border: 2px solid darksalmon;
+                color: darksalmon;
+                margin-top: 15px;
+                display: block;
+                padding: 7px;
+                width: 100%;
+                box-sizing: border-box;
+                font-weight: 700;
+            }
+            .login-btn:hover{
+                color: white;
+                background-color: darksalmon;
+                border: 2px solid rgba(206, 132, 108, 0.918);
+            }
+            .senhaRecover{
+                margin: 4px;
+                text-align: center;
+                font-size: 12px;
+                text-decoration: none;
+                color: darksalmon;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="POST" id="login">
+            <fieldset class="login">
+                <label class="login-email">
+                    Usuário ou email:
+                    <input type="text" placeholder="email@exemplo.com" required class="login-input">
+                </label>
+                <label class="login-senha">
+                    Senha:
+                    <input type="password" required class="login-input">
+                </label>
+                <input type="submit" value="Login" class="login-btn"> 
+                <a href="#" class="senhaRecover">Esqueceu a sua senha?</a>
+            </fieldset>
+        </form>
+    </body>
+</html>
