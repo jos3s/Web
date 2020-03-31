@@ -10,12 +10,11 @@
         
         <style>
             .gridContainer{
-                width: 300px;
+                width: 340px;
                 background: #ccc;
             }
             .gridItem{
                 background: #999;
-                
                 font-size: 2em;
                 font-family: sans-serif;
             }
@@ -28,15 +27,16 @@
             }
             .gridContainer{
                 display: grid;
-                grid-template-columns: 100px 100px 150px;
+                grid-template-columns: 100px 100px 100px;
                 grid-template-rows: repeat(2, 100px);
+                /* row-gap: 10px;
+                column-gap: 10px; */
+                gap: 10px 20px;
             }
         </style>
     </head>
     <body>
         <h2>Grid Layout</h2>
-        
-        
         <div class="gridContainer">
             <div class="gridItem">1</div>
             <div class="gridItem">2</div>
@@ -45,7 +45,5 @@
             <div class="gridItem">5</div>
             <div class="gridItem">6</div>
         </div>
-        
-        
     </body>
 </html>
