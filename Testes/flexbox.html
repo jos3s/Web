@@ -108,6 +108,15 @@
             .flexbox:nth-child(13) div:nth-child(1){
                 align-self: stretch;
             }
+            .flexbox:nth-child(14){
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column; /* troca os eixos*/
+                height: 500px;  /* agora se transformou na largura*/
+            }
+            .flexbox:nth-child(14) div{
+                flex-basis: 60px;
+            }
         </style>
     </head>
     <body>
@@ -174,6 +183,11 @@
             <div class="div3">3</div>
             <div class="div4">4</div>
         </div>
-        
+        <div class="flexbox">
+            <div class="div1">1</div> 
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
     </body>
 </html>
