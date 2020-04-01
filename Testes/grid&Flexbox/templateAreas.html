@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+        <style>
+            .gridcontaneir{
+                width: 90%;
+                background: #ccc;
+                margin: 30px auto;
+            }
+            .griditem{
+                background: #66BB6A;
+                padding: 12px;
+                font-family: sans-serif;
+            }
+            .gridcontaneir{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                grid-template-rows: 100px 50px 1fr 50px ;  
+                grid-template-areas: "header header header"
+                                     "nav    nav    aside"
+                                     "main   main   aside"
+                                     "footer footer aside";
+            }
+            .header{
+                grid-area:header ;
+            }
+            .nav{
+                grid-area: nav;
+            }
+            .aside{
+                grid-area: aside;
+            }
+            .main{
+                min-height: 200px;
+                grid-area: main;
+            }
+            .footer{
+                grid-area: footer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Grid Layout</h1>
+        <div class="gridcontaneir">
+            <header class="header griditem">Header</header>
+            <nav class="nav griditem">Nav</nav>
+            <main class="main griditem">Main</main>
+            <aside class="aside griditem">Aside</aside>
+            <footer class="footer griditem">Footer</footer>
+        </div>
+    </body>
+</html>
