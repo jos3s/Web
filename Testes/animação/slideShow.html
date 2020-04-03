@@ -1,0 +1,67 @@
+
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            @keyframes slide {
+                0%, 22%, 100%{
+                    transform: translateY(0);
+                }                
+                25%, 47%{
+                    transform: translateY(-50vh);
+                }                
+                50%, 72% {
+                    transform: translateY(-100vh);                    
+                }                
+                75%, 97% {
+                    transform: translateY(-150vh);                    
+                } 
+            }
+            body{
+                font-family: sans-serif;
+                color: white;
+                background: #1a1818;
+                margin: 0;
+            }
+            
+            #slide-externo{
+                width: 80vw;
+                height: 50vh;
+                border: 10px solid #FFD54F;
+                box-shadow: 0 0 10px black;
+                margin-left: 10vw;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+            #slide-interno{
+                width: 100%;
+                animation: slide 15s infinite cubic-bezier(0.23, 1, 0.320, 1);
+            }
+            #slide-interno img{
+                display: block;
+                height: 50vh;
+                width: 100%; 
+                will-change: transform;
+                /* object-fit: cover;*/
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Animation - slideshow</h2>
+        <div id="slide-externo">
+            <div id="slide-interno">
+                <img src="img/slide1.jpg" alt="">
+                <img src="img/slide2.jpg" alt="">
+                <img src="img/slide3.jpg" alt="">
+                <img src="img/slide4.jpg" alt="">
+            </div>
+        </div>
+    </body>
+</html>

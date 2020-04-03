@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+        <style>
+            @keyframes anda{
+                0%{
+                    transform:translateX(0) ;
+                    background: #FFEE58;
+                }
+                100%{
+                    transform: translateX(400px);
+                    background: #29B6F6;
+                }
+            }
+            .animaTime div{
+                width: 80px;
+                height: 50px;
+                border: 3px solid #ef5350;
+            }
+            .animaTime div:nth-child(1){
+               /*  animation-name: anda;
+                animation-duration: 2s;
+                animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715); */
+                /* Ease-in  : inicio acelerado
+                   Ease-out: final desacelera */
+                animation: anda 2s ease-in-out; 
+            }
+            .animaTime div:nth-child(2){
+                animation: anda 2s ease-in-out infinite alternate;
+                /* animation-name: anda;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out; 
+                animation-iteration-count: infinite;
+                animation-direction: alternate; */
+            }
+            .animaTime div:nth-child(3){
+                animation: anda 2s ease-in-out 1s infinite alternate;
+                /* animation-name: anda;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 1s; 
+                animation-iteration-count: infinite;
+                animation-direction: alternate; */
+            }
+            .animaTime div:nth-child(4){
+                background: #f44336;
+                animation-name: anda;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 1s; 
+                animation-iteration-count: 2;
+                animation-direction: alternate;
+                animation-fill-mode: both;
+                /* forwards both backawars*/
+            }
+            .animaTime div:nth-child(5){
+                background: #f44336;
+                animation-name: anda;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 1s; 
+                animation-iteration-count: 2;
+                animation-direction: alternate;
+                animation-fill-mode: both;
+                animation-play-state: running;
+            }
+            .animaTime div:nth-child(5):hover{
+                animation-play-state: paused;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Animação</h2>
+        <div class="animaTime">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </body>
+</html>
