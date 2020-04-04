@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <button onclick="mostrarTabuada()">Criar tabuada</button>
+        <button onclick="limparTabuada()">Limpar tabuada</button>
+        <script>
+            function mostrarTabuada(){
+                var n= parseFloat(prompt('Digite um numero: '))
+                limparTabuada()
+                for(var i=1;i<=500;i++){
+                    m+=n + ' x '+ i + ' = ' +(i*n)+'<br>'
+                }
+                output.innerHTML=m;
+            }
+            function limparTabuada(){
+                m=''
+                output.innerHTML=m
+            }
+            var output = document.querySelector('#out')
+            var m=''
+        </script>
+    </body>
+</html> 

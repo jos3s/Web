@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>
+        <div id="out"></div>
+        <script>
+            var n1=prompt('Didite um valor:')
+            n1=parseFloat(n1)
+            escrever()
+            function escrever(){
+                let output = document.querySelector('#out')
+                output.innerHTML=n1
+            }
+            function somar(){
+                var n2=parseFloat(prompt('Digite um valor: '))
+                n1+=n2
+                escrever()
+            }
+            function subtrair(){
+                var n2=parseFloat(prompt('Digite um valor: '))
+                n1-=n2
+                escrever()
+            }
+            function multiplicar(){
+                var n2=parseFloat(prompt('Digite um valor: '))
+                n1*=n2
+                escrever()
+            }
+            function dividir(){
+                var n2=parseFloat(prompt('Digite um valor: '))
+                n1/=n2
+                escrever()
+            }
+        </script>
+    </body>
+</html> 
