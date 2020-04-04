@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">*</button>
+        <button onclick="calcular('/')">/</button>
+        <div id="out"></div>
+        <script>
+            var n1=prompt('Didite um valor:')
+            n1=parseFloat(n1)
+            escrever()
+            function escrever(){
+                let output = document.querySelector('#out')
+                output.innerHTML=n1
+            }
+            function calcular(sinal){
+                var n2=parseFloat(prompt('Digite um valor: '))
+                if(sinal=='+'){
+                    n1+=n2
+                }else if(sinal=='-'){
+                    n1-=n2
+                }else if(sinal=='*'){
+                    n1*=n2
+                }else{
+                    n1/=n2
+                }
+                escrever()
+            }
+            
+        </script>
+    </body>
+</html> 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <button onclick="area(largura, altura)">Resultado:</button>
+        <div id="out"></div>
+        <script>
+            var largura=parseFloat(prompt('Didite a largura:'))
+            var altura=parseFloat(prompt('Didite a altura:'))
+            function area(l, a){
+                var r = l*a
+                let output = document.querySelector('#out')
+                output.innerHTML= 'Altura x largura = ' +r
+            }
+        </script>
+    </body>
+</html> 
