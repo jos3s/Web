@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <div id="out"></div>
+        <script>
+            var output=document.querySelector('#out')
+            var produto= new Object()
+            produto.name='Lápis'
+            produto.quantidade=12
+            produto.preco=1.5
+            produto.comprou=function (qtd){
+                !qtd ? qtd=1 : qtd
+                console.log('Comprou uma caneta')
+                this.quantidade-=qtd;
+            }
+            var msg= produto.name + '<br>'
+            msg+= 'Preço: ' + produto.preco + '<br>'
+            msg+= 'Quantidade: '+ produto.quantidade
+            output.innerHTML=msg
+        </script>
+    </body>
+</html> 
