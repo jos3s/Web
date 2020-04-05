@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <div id="out"></div>
+        <script>
+            var output=document.querySelector('#out')
+            var nums = new Array(20,30,50,68,95,24,67,15,84,63,25,20,36,48)
+            var res = somaPares(nums)
+            output.innerHTML= res
+            function somaPares(nums){
+                var s=0
+                for(var i=0;i<nums.length;i++){
+                    if(nums[i]%2==0){
+                        s+=nums[i]
+                    }
+                }
+                return s
+            }
+            /* var s=0
+            for(var i=0;i<nums.length;i++){
+                if(nums[i]%2==0){
+                    s+=nums[i]
+                }
+            } */
+        </script>
+    </body>
+</html> 

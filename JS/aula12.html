@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <div id="out"></div>
+        <script>
+            var produtos = new Array('Caneta', 'Lápis', 'Tesoura','Caderno','Borracha')
+            var output=document.querySelector('#out')
+            /* output.innerHTML=produtos.toString() */
+            var msg=''
+            for(var i=0;i<produtos.length;i++){
+                msg+='Produto '+(i+1)+ ': '+produtos[i] +'<br>'
+            }
+            output.innerHTML=msg
+        </script>
+    </body>
+</html> 

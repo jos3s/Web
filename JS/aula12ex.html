@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <div id="out"></div>
+        <script>
+            var output=document.querySelector('#out')
+            var dias = new Array('domingo', 'segunda', 'terça','quarta','quinta','sexta','sábado')
+            var data = new Date()
+            var diaSemana = data.getDay()
+            alert('Hoje é '+ dias[diaSemana])
+        </script>
+    </body>
+</html> 
