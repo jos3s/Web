@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <div id="out"></div>
+        <script>
+            var output=document.querySelector('#out')
+            let msg=''
+            var produtos=[{'nome': 'lapis', 'preco':2}, {'nome':'caneta', 'preco':2},{'nome':'borracha', 'preco':0.25}]
+            for(var i=0;i<produtos.length;i++){
+                msg+= "Nome: "+ produtos[i].nome +'<br>'
+                msg+= "Preço: "+ produtos[i].preco +'<br>'
+            }
+            output.innerHTML= msg
+        </script>
+    </body>
+</html> 
