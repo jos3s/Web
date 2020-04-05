@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <button onclick="areaAlert()">Alert:</button>
+        <button onclick="areaOutput()">Output:</button>
+        <div id="out"></div>
+        <script>
+            areaAlert()
+            function area(l,a){
+                if( l=== undefined || a===undefined){
+                    throw new Erro('Um dos valores não foi digitado')
+                }
+                if(isNaN(l) || isNaN(a)){
+                    throw new Erro('Apenas números')
+                }
+                return l*a
+            }
+            function areaAlert(l, a){
+                var lar=parseFloat(prompt('Didite a largura:'))
+                var alt=parseFloat(prompt('Didite a altura:'))
+                try{
+                    var res=area(lar, alt)
+                }catch(e){
+                    res=e
+                }
+                alert('A área é : '+res)
+            }
+            function areaOutput(){
+                var lar=parseFloat(prompt('Didite a largura:'))
+                var alt=parseFloat(prompt('Didite a altura:'))
+                try{
+                    var res=area(lar,alt)
+                }catch(e){
+                    res=e
+                }
+                var output= document.querySelector("#out")
+                output.innerHTML='A área é: '+res
+            }
+        </script>
+    </body>
+</html> 
