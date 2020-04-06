@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <div id="out"></div>
+        <script>
+            function somar(n1,n2){ //literal
+                return n1+n2;
+            }
+            var s=somar(2,4);
+            console.log('Resultado: ', s);
+            somar.teste='propriedade da função';
+
+            var teste= function(str){ //função anônima
+                console.log('teste', str);
+            };
+            teste('oi')
+
+            var funcaoParametro= function (f) { //pode ou não ter o nome
+                f();
+            }
+            funcaoParametro(function (){
+                console.log('Função sendo passada por paramêtro');
+            });
+            
+        </script>
+    </body>
+</html> 
