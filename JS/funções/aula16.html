@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <div id="out"></div>
+        <script>    //função auto-invocavel
+            (function(){
+                'use strict'; // não deixa criar varáveis globais na função (pode ser usado globalmente) ,ou seja. sem variavel=10
+                /* isvalid=false;  aqui seria uma variavel global*/
+                var isvlaid=false; //variavel local
+                console.log(isvalid);
+
+                /* function somar(arry){
+                    console.log(arry[0]+arry[1]+arry[3]);
+                } */
+                function somar(){
+                    console.log(arguments); //funciona mostrando tudo que foi passado
+                    var res, x=0;
+                    while(arguments[x]){
+                        res+=arguments[x];
+                        x++;
+                    }
+                    console.log('Resultado: ', res);
+                }
+                somar(20,30,40,50,60);
+            })();
+        </script>
+    </body>
+</html> 
