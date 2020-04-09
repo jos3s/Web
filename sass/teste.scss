@@ -1,0 +1,17 @@
+a{
+    font-size:2em;
+    color: red;
+
+    &:hover{
+        text-decoration: dotted;
+        color: blue;
+    }
+}
+body{
+    font:{
+        family: sans-serif;
+        weight: normal;
+    }
+    color: #263238;
+    border: 1px solid yellow;
+}

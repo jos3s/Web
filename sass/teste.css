@@ -1,0 +1,18 @@
+a {
+  font-size: 2em;
+  color: red;
+}
+
+a:hover {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  color: blue;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #263238;
+  border: 1px solid yellow;
+}
+/*# sourceMappingURL=teste.css.map */
