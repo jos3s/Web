@@ -1,0 +1,13 @@
+.btn{
+    padding: 5px;
+    border:{
+        style: solid;
+        radius: 5px;
+        width:1px;
+    }
+}
+
+.btn-follow{
+    @extend .btn;
+    background: #d32f2f;
+}
