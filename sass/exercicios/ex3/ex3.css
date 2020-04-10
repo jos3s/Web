@@ -4,4 +4,7 @@
   border-radius: 5px;
   border-width: 1px;
 }
-/*# sourceMappingURL=ex3.css.map */
+
+.btn-follow {
+  background: #d32f2f;
+}
