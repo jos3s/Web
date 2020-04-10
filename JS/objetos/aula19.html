@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+
+        <script>
+            var x = [0];
+            function mudaArry(x){
+                var y=x;
+                y.push(2);
+                console.log('mudaX:');
+                console.log(x);
+                console.log(y);
+            }
+            mudaArry(x);
+            console.log('x: ',x);
+
+            console.log('-- -- --')
+
+            var y =0;
+            function muday(y){
+                var y1=y;
+                console.log(++y);
+            }
+            muday(y);
+            console.log('mudaY:',y);
+        </script>
+    </body>
+</html>
