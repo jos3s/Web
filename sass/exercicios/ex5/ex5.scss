@@ -1,0 +1,156 @@
+$rem:16;
+
+@mixin borderRadius($r){
+    border-radius: $r;
+    -webkit-border-radius: $r;
+    -moz-border-radius: $r;
+    -ms-border-radius: $r;
+    -o-border-radius: $r;
+}
+@mixin borderSizing($sizing){
+    box-sizing: $sizing;
+   -webkit-box-sizing: $sizing;
+   -moz-box-sizing: $sizing;
+}  
+
+* {
+  margin: 0;
+  padding: 9;
+  @include borderSizing(border-box);
+}
+
+html {
+  font-size: #{(16/$rem)}rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #fafafa;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+header .avatar {
+  @include borderRadius(50);
+  margin: 0 auto;
+}
+
+header .desc {
+  text-align: center;
+}
+
+header h1, header h2 {
+  display: inline-block;
+  margin: #{(10/$rem)}rem 0;
+}
+
+header h1 {
+  font-size: #{(28/$rem)}rem;
+}
+
+header h2 {
+  font-size: #{(24/$rem)}rem;
+}
+
+header .links {
+  list-style: none;
+  margin: #{(10/$rem)}rem 0;
+}
+
+header .links li {
+  list-style: none;
+  margin: 0 #{(20/$rem)}rem 0 0;
+  display: inline-block;
+}
+
+.btn-follow {
+  margin: 0 #{(20/$rem)}rem;
+  padding: #{(6/$rem)}rem #{(14/$rem)}rem;
+  border-width: #{(1/$rem)}rem;
+  border-style: solid;
+  border-color: #3897f0;
+  border-radius: #{(4/$rem)}rem;
+}
+
+.btn-follow:hover {
+  background: #3897f0;
+  color: #fff;
+}
+
+.photo {
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photo li {
+  width: 100%;
+  margin: #{(20/$rem)}rem 0;
+  position: relative;
+}
+
+.photo li img {
+  width: 100%;
+}
+
+.photo li .img {
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.photo li:hover .img-hover {
+  opacity: 1;
+}
+
+@media (min-width:#{(768/$rem)}rem) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+  header .avatar {
+    margin: 0 #{(40/$rem)}rem;
+  }
+  header .desc {
+    text-align: left;
+  }
+  .photo li {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=ex2.css.map */
