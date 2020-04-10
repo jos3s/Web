@@ -8,7 +8,7 @@
     <body>
 
         <script>
-            var caneta={
+            /* var caneta={
                 cor:'red',
                 mudaCor:function(cor){
                     this.cor=cor;
@@ -16,7 +16,22 @@
             }
             caneta.mudaCor('green');
             console.log(caneta);
-            
+             */
+
+            function Caneta(preco, color){
+                var cor=color || 'black';
+                this.preco=preco || 1;
+                
+                this.mudaCor=function(color){
+                    cor=color;
+                }
+                this.pegaCor=function(){
+                    return cor;
+                }
+            }
+
+            var caneta1 = new Caneta();
+            var caneta2 = new Caneta(2,'green');
         </script>
     </body>
 </html>
