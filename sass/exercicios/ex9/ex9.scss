@@ -1,0 +1,30 @@
+@import "partials/header.scss";
+@import "partials/buttons.scss";
+@import "partials/photo.scss";
+@import "partials/variaveisFuncoes.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700;800&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: #{pixelRem(9)}rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box; 
+}
+html{
+    font-size: #{pixelRem(16)}rem;
+}
+ul{
+    padding: $zero;
+    margin: $zero;
+}
+img{
+    border: $zero;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: $fundo;
+}

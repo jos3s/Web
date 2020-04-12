@@ -1,0 +1,45 @@
+@import "variaveisFuncoes.scss";
+header{
+    display: flex;
+    margin: #{pixelRem(30)}rem $zero;
+    flex-flow: column;
+    .avatar{
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        margin: $zero auto;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .desc{
+        text-align: center;
+    }
+    h1, h2{
+        display: inline-block;
+        margin: #{pixelRem(10)}rem $zero;
+    }
+    h1{
+        font-size: #{pixelRem(28)}rem;
+    }
+    h2{
+        font-size: #{pixelRem(24)}rem;
+    }
+    .links{
+        list-style: none;
+        margin: #{pixelRem(10)}rem $zero;
+    }
+    .links li{
+        list-style: none;
+        margin: $margin-li;
+        display: inline-block;
+    }
+    @include tablet{
+        flex-flow: row-reverse;
+        .avatar{
+            margin: $zero 40px;
+        }
+        .desc{
+            text-align: left;
+        }
+    }
+}

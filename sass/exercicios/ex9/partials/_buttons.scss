@@ -1,0 +1,21 @@
+@import "variaveisFuncoes.scss";
+%btn{
+    margin: 0 20px;
+    padding: #{pixelRem(6)}rem #{pixelRem(14)}rem;
+    border-width: pixelRem(1);
+    border-style: solid;
+    border-radius: 4px;
+}
+.btn{
+    @extend %btn;
+    border-color: $cor;
+    background-color: $cor-white;
+    color: $cor;
+}
+.btn-follow{
+    @extend %btn;
+    &:hover{
+        background: $cor;
+        color: $cor-white;
+    }
+}

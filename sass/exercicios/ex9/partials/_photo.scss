@@ -1,0 +1,34 @@
+@import "variaveisFuncoes.scss";
+.photo{
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    li{
+        width: 100%;
+        margin: #{pixelRem(20)}rem $zero;
+        position: relative;
+    }
+    li img{
+        width: 100%;
+    }
+    li .img{
+        transition: all .3s linear;
+        opacity: $zero;
+        position: absolute;
+        top: $zero;
+        left: $zero;
+        width: 100%;
+        height: 100%;
+        background: $fundo-hover;
+        
+    }
+    li:hover .img-hover{
+        opacity: 1;
+    }
+    @include tablet{
+        .photo li{
+            width: 30%;
+        }
+    }
+}

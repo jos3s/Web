@@ -1,0 +1,17 @@
+$cor: #3897f0;
+$cor-white: #fff;
+$fundo: #fafafa;
+$fundo-hover: rgba( 000,000,000,0.3) ;
+$margin-li: 0 20px 0 0;
+$zero:0;
+$tablet:768px;
+
+@mixin tablet{
+    @media (min-width:#{$tablet}){
+        @content;
+    }
+}
+
+@function pixelRem($pixel){
+    @return  $pixel/16;
+}
