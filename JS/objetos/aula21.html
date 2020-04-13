@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+
+        <script>
+            function Pessoa(nome,sobrenome) {
+                var name=nome ||'';
+                var sobreNome=sobrenome ||'';
+                this.pegaNome=function(){
+                    return name;
+                }
+                this.pegaSobrenome=function(){
+                    return sobreNome;
+                }
+                this.pegaNomeCompleto=function(){
+                    return name + ' ' +sobreNome;
+                }
+            }
+
+            var pessoa1 = new Pessoa('José', 'Ulisses');
+            var pessoa2 = new Pessoa('Maria', 'Luiza');
+            var pessoa3 = new Pessoa('João', 'Lucas');
+            var pessoas=[pessoa1, pessoa2, pessoa3]
+            for (let i = 0; i < pessoas.length; i++) {
+                console.log(pessoas[i].pegaNomeCompleto());
+                
+            }
+            //Sintaxe literal
+            /* var p1= {
+                nome:'Antonio',
+                sobrenome:'Emanuel'
+            };
+            var p2= {
+                nome:'Paulo',
+                sobrenome:'Carlos'
+            };
+            var p3= {
+                nome:'Marcelo',
+                sobrenome:'Pedro'
+            };
+            for(var i=1;i<=3;i++){
+                console.log(window["p"+i].nome +" "+window["p"+i].sobrenome);
+            } */
+
+        </script>
+    </body>
+</html>
