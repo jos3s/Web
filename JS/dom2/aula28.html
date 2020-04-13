@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <textarea name="" id="msg" cols="50" rows="10" maxlength="100"></textarea>
+            <div style="display: none;" id="restaContainer"> 
+                Restam <span id="resta"></span> caracteres.
+            </div>
+        </div>
+        <script>
+            (function () {
+                'use strict';
+                var $restaContainer=document.getElementById('restaContainer');
+                var $txtMsg=document.getElementById("msg");
+                var $resta=document.getElementById('resta');
+                var max=$txtMsg.maxLength;
+
+                function mostraContainer() {
+                    $restaContainer.style.display='block';
+                }
+                
+                mostraContainer();
+                faltaCaracteres(max);
+                $txtMsg.addEventListener('input',checkLength);
+                
+                function checkLength(e) {
+                    var totalLetras=this.value.length;
+                    var caracteresRestante= parseInt(max)-parseInt(totalLetras);
+                    faltaCaracteres(caracteresRestante);
+                }
+                function faltaCaracteres(n) {
+                    $resta.textContent=n;
+                }
+            })()
+        </script>
+    </body>
+</html>
