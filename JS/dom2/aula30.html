@@ -35,26 +35,23 @@
                     }
                 });
 
-                for (var i = 0; i < $lis.length; i++) {
-                    addEvent($lis[i]);
-                }
+                $ul.addEventListener('click', function (e) {
+                    if(e.target.nodeName === 'LI'){
+                        toggleDone(e.target);
+                    }
+                });
 
                 function addAtv() {
-                    /* var atv= "<li>" +$txtAtv.value+"</li>"; */
-                    /* $ul.innerHTML+=atv; */
                     var li=document.createElement('li');
                     var text=document.createTextNode($txtAtv.value);
                     li.appendChild(text);
                     $ul.appendChild(li);
                     $txtAtv.value='';
                     $txtAtv.focus();
-                    addEvent(li);
                 }
-                function addEvent(li) {
-                    li.addEventListener('click', toggleDone);
-                }
-                function toggleDone() {
-                    this.classList.toggle('done');
+
+                function toggleDone(li) {
+                    li.classList.toggle('done');
                 }
             })()
         </script>
