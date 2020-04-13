@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <button id="btn1"onclick="clicar()">bnt1</button>
+            <button id="btn2">bnt2</button>
+            <button id="btn3">bnt3</button>
+        </div>
+        <script>
+            //dom nivel 2
+            var btn3=document.getElementById('btn3'); 
+            btn3.addEventListener("click",function(){
+                alert('clicou com o dom level 2')
+            });
+            btn3.addEventListener("click",function(){
+                alert('clicou com o dom level 2 com outro evento')
+            });
+            //utilizando o onclick apenas uma única função pode ser executada
+        </script>
+    </body>
+</html>
