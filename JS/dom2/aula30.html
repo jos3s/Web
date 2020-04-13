@@ -37,7 +37,7 @@
 
                 $ul.addEventListener('click', function (e) {
                     if(e.target.nodeName === 'LI'){
-                        toggleDone(e.target);
+                        removeAtv(e.target);
                     }
                 });
 
@@ -50,8 +50,10 @@
                     $txtAtv.focus();
                 }
 
-                function toggleDone(li) {
-                    li.classList.toggle('done');
+                function removeAtv(li) {
+                    if(confirm('Deseja realmente excluir a tarefa? \n' + "\""+li.textContent+"\"")){
+                        li.parentNode.removeChild(li);
+                    }
                 }
             })()
         </script>
