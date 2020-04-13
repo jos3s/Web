@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <form action="#">
+                <label for="txtUser">
+                    Usuário: 
+                    <input type="text" id="txtUser" name="user">
+                </label>
+                <label for="txtPass">
+                    Senha: 
+                    <input type="password" id="txtPass" name="pass">
+                </label>
+                <button type="button" id="btn">Logar</button>
+            </form>
+        </div>
+        <script>
+            (function () {
+                'use strict';
+                var $txtUser=document.getElementById('txtUser');
+                var $txtPass=document.getElementById('txtPass');
+                var $btn=document.getElementById('btn');
+
+                $btn.addEventListener('click', function () {
+                    if(!$txtUser.value || !$txtPass.value){
+                        alert('Preencha todos os campos');
+                    }
+                });
+            })()
+        </script>
+    </body>
+</html>
