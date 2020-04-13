@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <button id="btn1"onclick="clicar()">bnt1</button>
+            <button id="btn2">bnt2</button>
+        </div>
+        <script>
+            //dom nivel 0
+            var btn2=document.getElementById('btn2'); 
+            btn2.onclick=clicar;
+            function clicar(){
+                alert('clicou');
+            }
+        </script>
+    </body>
+</html>
