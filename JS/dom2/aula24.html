@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <button id="btn1"onclick="clicar()">bnt1</button>
+            <button id="btn2">bnt2</button>
+            <button id="btn3">bnt3</button>
+        </div>
+        <div class="container">
+            <h1>Propagação de eventos</h1>
+            <div id="d1" style="background: #43A047; padding: 25px;">
+                dentro da div
+                <span style="background: #42A5F5;">dentro do span</span></div>
+        </div>
+        <script>
+
+            var $d1=document.querySelector('#d1');
+            var $d1Span=document.querySelector('#d1 span');
+           /*  $d1.addEventListener("click", function () {
+                console.log('click no d1')
+            }); */
+            $d1.addEventListener("click", function () {
+                console.log('click no d1')
+            },true); //muda a ordem de captura dos eventos
+            $d1Span.addEventListener("click", function () {
+                console.log('click no d1Span')
+            },true);
+            document.addEventListener("click", function(){
+                console.log("click no documento")
+            }, true)
+        </script>
+    </body>
+</html>
