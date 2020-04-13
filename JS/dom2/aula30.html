@@ -36,17 +36,23 @@
                 });
 
                 for (var i = 0; i < $lis.length; i++) {
-                    $lis[i].addEventListener('click', toggleDone);
+                    addEvent($lis[i]);
                 }
 
                 function addAtv() {
-                    var atv= "<li>" +$txtAtv.value+"</li>";
-                    $ul.innerHTML+=atv;
-
+                    /* var atv= "<li>" +$txtAtv.value+"</li>"; */
+                    /* $ul.innerHTML+=atv; */
+                    var li=document.createElement('li');
+                    var text=document.createTextNode($txtAtv.value);
+                    li.appendChild(text);
+                    $ul.appendChild(li);
                     $txtAtv.value='';
                     $txtAtv.focus();
+                    addEvent(li);
                 }
-
+                function addEvent(li) {
+                    li.addEventListener('click', toggleDone);
+                }
                 function toggleDone() {
                     this.classList.toggle('done');
                 }
