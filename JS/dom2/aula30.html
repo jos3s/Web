@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <input type="text" name="" id="txtAtv">
+            <button id="btn">Cadastrar tarefa</button>
+            <ul>
+                <li>estudar HTML</li>
+                <li>estudar CSS</li>
+                <li>jogar</li>
+            </ul>
+        </div>
+        <script>
+            (function () {
+                var $ul=document.querySelector('ul');
+                var $txtAtv=document.querySelector('#txtAtv');
+                var $btn=document.querySelector('#btn');
+
+                $btn.addEventListener('click', function () {
+                    var atv= "<li>" +$txtAtv.value+"</li>";
+                    $ul.innerHTML+=atv;
+
+                    $txtAtv.value='';
+                    $txtAtv.focus();
+                });
+            })()
+        </script>
+    </body>
+</html>
