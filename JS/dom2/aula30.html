@@ -21,13 +21,20 @@
                 var $txtAtv=document.querySelector('#txtAtv');
                 var $btn=document.querySelector('#btn');
 
-                $btn.addEventListener('click', function () {
+                $btn.addEventListener('click', addAtv);
+                $txtAtv.addEventListener('keyup', function (e) {
+                    /* console.log(e.keycode); */
+                    if(e.keyCode==13){
+                        addAtv();
+                    }
+                })
+                function addAtv() {
                     var atv= "<li>" +$txtAtv.value+"</li>";
                     $ul.innerHTML+=atv;
 
                     $txtAtv.value='';
                     $txtAtv.focus();
-                });
+                }
             })()
         </script>
     </body>
