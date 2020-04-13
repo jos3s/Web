@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <form action="#">
+                <textarea cols="50" rows="10" maxlength="100">Exemplo contrato</textarea>
+                <label >
+                    <input type="checkbox" name="" id="chk" checked>Li e aceito os termos do contrato
+                </label>
+                <input type="submit" value="Aceitar" id="btn">
+            </form>
+            
+        </div>
+        <script>
+            (function () {
+                'use strict';
+                var $btn=document.getElementById("btn");
+                var $chk=document.getElementById("chk");
+                estadoBtn();
+
+                $chk.addEventListener('change', function () {
+                    /* if(this.checked){
+                        $btn.disabled=false;
+                    }else{
+                        $btn.disabled=true;
+                    } */
+                    estadoBtn();
+                })
+
+                function estadoBtn() {
+                    $btn.disabled=!chk.checked;
+                }                
+            })()
+        </script>
+    </body>
+</html>
