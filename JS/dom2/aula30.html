@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="José Ulisses">
-        <title></title>
+        <style>
+            .done{
+                color: #616161;
+                text-decoration: line-through;
+            }
+        </style>
     </head>
     <body>
         <div>
@@ -18,6 +23,7 @@
         <script>
             (function () {
                 var $ul=document.querySelector('ul');
+                var $lis=$ul.querySelectorAll('li');
                 var $txtAtv=document.querySelector('#txtAtv');
                 var $btn=document.querySelector('#btn');
 
@@ -27,13 +33,22 @@
                     if(e.keyCode==13){
                         addAtv();
                     }
-                })
+                });
+
+                for (var i = 0; i < $lis.length; i++) {
+                    $lis[i].addEventListener('click', toggleDone);
+                }
+
                 function addAtv() {
                     var atv= "<li>" +$txtAtv.value+"</li>";
                     $ul.innerHTML+=atv;
 
                     $txtAtv.value='';
                     $txtAtv.focus();
+                }
+
+                function toggleDone() {
+                    this.classList.toggle('done');
                 }
             })()
         </script>
