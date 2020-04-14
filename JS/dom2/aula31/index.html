@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Site pessoal Silvia Silveira</title>
+        
+        <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+
+    <nav class="header-nav">
+        <div class="container">
+            <a href="index.html" class="header-nav__logo">
+                <img src="imagens/logo.svg" alt="Logotipo Silvia Silveira">
+            </a>
+            <button aria-controls="mainMenu" class="header-nav__hamburgger" type="button" aria-expanded="false">
+                <div class="header-nav__hamburggerParties">
+                    <span class="sr-only">Menu</span>
+                    <symbol id="icon-menu" viewBox="0 0 32 32">
+                    <title>menu</title>
+                    <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                    </symbol>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>Menu</title><path style="fill: white;" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path></svg>
+                </div>
+            </button>
+            <ul class="header-nav__menu" id="mainMenu">
+                <li><a href="portfolio.html">Portifolio</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>   
+    <div class="jumbotron header-animado">
+        <div class="container">
+            <p class="header-animado__title">Olá, tudo bem! </p>
+            <h1 class="header-animado__subtitle">Eu sou Silvia Silveira, webdesigner, front-ender e apreciadora de café!</h1>
+        </div>
+        <div class="header-animado__ilustra">
+            <div class="nuvens"></div>
+            <div class="casas"></div>
+            <div class="rua"></div>        
+            <div class="carrosCima"></div>
+            <div class="carrosBaixo"></div>
+        </div>
+    </div>
+
+    <script src="javascript/menu.js"></script>
+    </body>
+</html>
