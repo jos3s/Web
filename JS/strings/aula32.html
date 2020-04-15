@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <style>
+            .done{
+                color: #616161;
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <input type="text" name="" id="txtAtv">
+            <button id="btn">Cadastrar tarefa</button>
+            <ul>
+                <li>estudar HTML</li>
+                <li>estudar CSS</li>
+                <li>jogar</li>
+            </ul>
+        </div>
+        <script>
+            var nome='José Ulisses Silva';
+            var nomeFormatado= formatarNome(nome);
+
+            function formatarNome(nome){
+                var posUltimoEspaco= nome.lastIndexOf(" ");
+                if(posUltimoEspaco<0){
+                    return nome;
+                }
+                var ultNome=nome.slice(posUltimoEspaco+1);
+                var priNome= sonme.slice(0, posUltimoEspaco)
+
+                return ultNome +', '+priNome;
+            }
+        </script>
+    </body>
+</html>
