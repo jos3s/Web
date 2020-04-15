@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <style>
+            .done{
+                color: #616161;
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Proident culpa ex enim enim tempor nulla proident cupidatat irure. Sunt proident nostrud eiusmod pariatur ex. Consequat fugiat voluptate anim sunt consequat elit officia sit culpa nulla. Ea labore anim commodo nisi ex Lorem officia ex. Ut consequat nostrud qui sunt qui incididunt excepteur. Non exercitation minim pariatur aliqua excepteur magna mollit voluptate esse est elit exercitation velit laboris. Laboris velit occaecat cillum officia sit labore laborum consequat velit cupidatat. Commodo velit qui eiusmod esse fugiat deserunt aliquip magna aliquip reprehenderit ipsum.Fugiat non nisi deserunt esse. Incididunt est sunt nulla enim irure aliquip ut. Culpa proident proident ex aliqua ullamco ullamco eu veniam est magna fugiat eiusmod dolore. Est aute irure ea elit officia reprehenderit id anim pariatur proident.</p>
+        <p>Eu eu ipsum labore officia enim culpa cillum do aliquip Lorem tempor. Nisi nisi nulla aute est dolore. Cupidatat ullamco et excepteur eiusmod duis incididunt adipisicing ea non adipisicing elit laboris ut. Est qui dolore nisi velit est dolor ipsum ut non occaecat ad consectetur nulla non. Ex laborum enim cillum cillum officia magna do. Dolore eiusmod ut dolore non exercitation sint veniam aute cillum anim. Incididunt aliquip eiusmod occaecat ullamco labore cillum elit aliquip eiusmod ut labore in eiusmod. Veniam est excepteur aliqua et consequat deserunt ex.Fugiat non nisi deserunt esse. Incididunt est sunt nulla enim irure aliquip ut. Culpa proident proident ex aliqua ullamco ullamco eu veniam est magna fugiat eiusmod dolore. Est aute irure ea elit officia reprehenderit id anim pariatur proident.</p>
+        <p>Tempor commodo ipsum enim nisi qui ut. Ad culpa mollit sunt ea sint culpa et voluptate aliqua sit proident amet cillum. Ipsum consectetur consectetur proident aliqua magna aliqua nostrud officia sunt. Exercitation laboris laborum laboris dolore irure dolore. Mollit cillum est ad aliquip reprehenderit ea ad officia non. Consectetur eiusmod commodo consequat veniam. Aute incididunt proident incididunt voluptate id eiusmod commodo dolore eu ea do velit minim est. Adipisicing ex esse cupidatat voluptate sit tempor quis aute nulla sint occaecat. Esse excepteur pariatur eiusmod ea aliquip et veniam deserunt eiusmod irure Lorem. Officia tempor officia enim laboris ex consequat nulla officia et deserunt ex laborum. Labore ex laboris aute ea ea est anim officia laborum non. Non tempor in deserunt officia ut deserunt eiusmod elit dolor.Fugiat non nisi deserunt esse. Incididunt est sunt nulla enim irure aliquip ut. Culpa proident proident ex aliqua ullamco ullamco eu veniam est magna fugiat eiusmod dolore. Est aute irure ea elit officia reprehenderit id anim pariatur proident.</p>
+        <script>
+            (function (){
+                window.addEventListener('load', init);
+
+                function init() {
+                    var $p=document.querySelectorAll('p');
+                    for(var i=0; i<$p.length;i++){
+                        $p[i].innerHTML=formatText($p[i].innerHTML);
+                    }
+                }
+                function formatText(txt) {
+                    var maxCaractere=200;
+                    if(txt<=maxCaractere) 
+                        return txt;
+                    var subTxt=txt.slice(0,maxCaractere);
+                    return subTxt+' ...';
+                }
+            })()
+        </script>
+    </body>
+</html>
