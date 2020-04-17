@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <style>
+        </style>
+        <script src="aula36.js"></script>
+        <script>
+            (function () {
+                window.addEventListener('load', init)
+                function init() {
+                    var n= sortear(5)+1;
+                    document.querySelector('body').style.background= "url(img/"+n+".jpg)";
+                }
+                function sortear(num) {
+                    var n=num||1;
+                    var sorteo=Math.random();
+                    sorteo=Math.floor(sorteo*n);
+                    return sorteo
+                }
+            })()
+        </script>
+    </head>
+    <body>
+        <div>
+            
+        </div>
+    </body>
+</html>
