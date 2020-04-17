@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <style>
+        </style>
+        <script src="aula36.js"></script>
+    </head>
+    <body>
+        <div>
+            
+        </div>
+        <script>
+            var arry=[1,2,3,4,5,20,'ksk','30',20];
+            //retorna um boleano se os elementos passarem por uma funçã/condição e retornarem true
+            var soNumeros=arry.every(function (el) {
+                return typeof el==='number'; //são numeros
+            });
+            //retorna um boleano(true) se pelo menos um dos elementos satisfazerem a condição/função
+            var aoMenosUmNumero=arry.some(function (el) {
+                return typeof el==='number'; //são numeros
+            });
+            //console.log(aoMenosUmNumero);
+
+            var numeros=arry.filter(function(elemento, indice, arry){
+                return typeof el ==="number";
+            });
+            //console.log(numeros);
+
+            arry.forEach(function(el, i, arry){
+                console.log('elemento=', el, '| indice=', i, '| arry-',arry.toString())
+            });
+
+            var posStr = arry.indexOf('ksk');
+            //var posStr=arry.indexOf(posStr, 6); procura a partir do index 6
+            //console.log(posStr);
+            
+            var posStr3 = arry.lastIndexOf(20);
+            //var posStr3 = arry.lastIndexOf('20',5); procurra do index 5 para tras
+        </script>
+    </body>
+</html>
