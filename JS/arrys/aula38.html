@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+    </head>
+    <body>
+        <div>
+            
+        </div>
+        <script>
+            var arry=[1,2,3,4,5,20,40];
+
+            //console.log(arry);
+            arry = arry.map(function (el, i, arry) {
+                return el*i;
+            });
+            //console.log(arry);
+
+            var arry2=[1,5,8,3,'arr'];
+            var arry3=arry2.concat(arry,'ola','teste');
+            //console.log(arry3)
+
+            var str=arry3.join(' - ');
+            console.log(str);
+        </script>
+    </body>
+</html>
