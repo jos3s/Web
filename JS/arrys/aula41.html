@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+    </head>
+    <body>
+        <div>
+            
+        </div>
+        <script>
+            var arry=[1,2,3,4,5,20,40, 'a','b','c'];
+            //retorna um pedaço de um arry a partir de uma posiçao
+            var novo=arry.slice(2,6); //inclui o item da posição 6
+            var novo2=arry.slice(6);
+
+            //o slipce mexe no  proprio arry
+            //      indice-remove-add-add
+            arry.splice(3,0,'oi','ai');
+            console.log(arry);
+
+            //va remover 3 itens a partir da posição 2 e retorna o indice dos mesmos
+            var arry2=arry.splice(2,3,'oi','ai');
+            console.log(arry);
+            console.log(arry2);
+        </script>
+    </body>
+</html>
