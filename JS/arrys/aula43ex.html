@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <style>
+            .destaque{
+                background-color: #90A4AE;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit Javascript minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla Javascript consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+        </div>
+        <script>
+            var paragrafos=document.querySelectorAll('p');
+            for(var i=0; i<paragrafos.length;i++){
+                var temJS=paragrafos[i].textContent.toLowerCase().indexOf("javascript")>=0;
+                paragrafos[i].className= temJS ? 'destaque' : '';
+            }
+        </script>
+    </body>
+</html>
