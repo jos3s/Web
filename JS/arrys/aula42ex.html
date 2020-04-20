@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+    </head>
+    <body>
+        <div>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+            <p>Laboris deserunt aute quis nulla proident consectetur do adipisicing veniam commodo pariatur deserunt ea culpa. Elit ipsum aliquip officia consequat qui sit adipisicing minim velit Lorem sit voluptate. Dolor incididunt tempor consectetur ea in ex nostrud.</p>
+        </div>
+        <script>
+            var paragrafos=document.querySelectorAll('p');
+            for(var i=0; i<paragrafos.length;i++){
+                paragrafos[i].innerHTML=formataP(paragrafos[i].innerHTML);
+            }
+            function formataP(txt){
+                var arry=txt.split(" ");
+                if(arry.length>10){
+                    return arr.slice(0,10).join(' ')+'...';
+                }
+                return txt;
+            }
+        </script>
+    </body>
+</html>
