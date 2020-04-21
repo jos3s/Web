@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+    </head>
+    <body>
+        <div>
+        </div>
+        <script>
+            (function () {
+                var dataAtual=new Date();
+                dataAtual.setHours(0);
+                dataAtual.setMinutes(0);
+                dataAtual.setSeconds(0);
+                dataAtual.setMilliseconds(0);
+                var anoAtual=dataAtual.getFullYear();
+
+                var dataNive=new Date(anoAtual,11,20);
+
+                var dataAtualTS=dataAtual.getTime();
+                var dataNiveTS=dataNive.getTime();
+                if(dataAtualTS===dataNiveTS){
+                    alert('Feliz aniversário!');
+                    return ;
+                }
+                if(dataNiveTS<dataAtualTS){
+                    dataNive.setFullYear(++anoAtual);
+                    dataNiveTS=dataNive.getTime();
+                }
+                const UM_DIA_TS=24*60*60*1000;
+
+                var diferenca=dataNiveTS-dataAtualTS;
+                alert('Falta(m) dias '+ diferenca/UM_DIA_TS +' para o seu aniversário');
+            })();
+        </script>
+    </body>
+</html>
