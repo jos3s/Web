@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+    </head>
+    <body>
+        <div>
+        </div>
+        <script>
+            (function () {
+                var dataAtual=new Date();
+                function formataData(data){
+                    var dia= data.getDate() <10 ? '0'+data.getDate() : data.getDate();
+                    var mes= data.getMonth +1;
+                    mes=mes<10 ? '0'+mes : mes;
+                    return  dia +'/'+ mes +'/' + data.getFullYear();
+                }
+                alert(formataData(dataAtual));  
+            })();
+        </script>
+    </body>
+</html>
