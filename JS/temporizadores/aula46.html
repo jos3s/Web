@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+    </head>
+    <body>
+        <div>
+        </div>
+        <script>
+            var n=0;
+            function somaUm(){
+                console.log('n', ++n);
+                if(n>5){
+                    clearInterval(intervalo);
+                }
+            }
+            setTimeout(somaUm,1000);
+            var intervalo=setInterval(somaUm,5000);
+            var str='';
+            var d=document.querySelector('div');
+            var timeout=setTimeout(function () {
+                for(var i=0;i<1000;i++){
+                    str+='i: '+i+'--';
+                    d.textContent+=str;
+                }
+            },3000);
+        </script>
+    </body>
+</html>
