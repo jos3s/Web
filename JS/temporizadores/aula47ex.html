@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <style>
+            .banner{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0 0 0 1000px rgba(0,0,0,.8);
+            }
+            .banner__close{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Banner</h1>
+        <div class="banner">
+            <h2>Banner Irritante</h2>
+            <button class="banner__close">X</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+        </div>
+        <script>
+            (function () {
+                var $banner=document.querySelector('.banner');
+                var $bannerBtn=document.querySelector('.banner__close');
+
+                $bannerBtn.addEventListener('click',escondeBanner);
+                var intervalo=null;
+                function mostrarBanner() {
+                    $banner.style.display= 'block';
+                    intervalo=setTimeout(escondeBanner,5000);
+                }
+                function escondeBanner() {
+                    $bannerBtn.removeEventListener('click', escondeBanner);
+                    $banner.parentNode.removeChild($banner);
+                    clearTimeout(intervalo);
+                }
+                setTimeout(mostrarBanner,5000);
+                
+            })();
+        </script>
+    </body>
+</html>
