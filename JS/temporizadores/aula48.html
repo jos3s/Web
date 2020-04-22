@@ -28,11 +28,13 @@
                 var rodando=false;
 
                 function iniciar() {
+                    if(rodando) return ;
                     msClick=Date.now();
                     rodando=true;
                     iniciarCronometro();
                 }
                 function pausar() {
+                    if(!$cronometro.value) return
                     if(rodando){
                         rodando=false;
                         clearInterval(intervalo);
