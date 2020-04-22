@@ -22,23 +22,58 @@
                 $parar.addEventListener('click',parar);
 
                 var msClick=0;
+                var msPausar=0;
+                var msTempoDecorrido=0;
+                var intervalo=null;
+                var rodando=false;
+
                 function iniciar() {
                     msClick=Date.now();
+                    rodando=true;
                     iniciarCronometro();
                 }
-                function iniciarCronometro() {
-                    setInterval(function () {
+                function pausar() {
+                    if(rodando){
+                        rodando=false;
+                        clearInterval(intervalo);
+                        msPausar=Date.now();
+                        msTempoDecorrido+=(msPausar-msClick);
+                    }else{
+                        rodando=true;
+                        msClick=Date.now();
+                        iniciarCronometro(msTempoDecorrido);
+                    }
+                }
+                
+                function parar() {
+
+                }
+
+                function iniciarCronometro(tempoDecorrido) {
+                    var ms=tempoDecorrido||0;
+                    intervalo=setInterval(function () {
                         var msAtual=Date.now();
                         var diferenca=msAtual-msClick;
-                        $cronometro.value=diferenca;
+                        $cronometro.value=formataTempo(diferenca + ms);
                     },100)
                 }
-                function pausar() {
-                    
+                
+                function formataTempo(ms) {
+                    if(ms<1000){
+                        return ms;
+                    }else if(ms<60000){
+                        var sec=ms/1000;
+                        sec=parseInt(sec);
+                        var cent=ms-(sec*1000);
+                        return sec+":"+cent;
+                    }else{
+                        var min=parseInt(ms/60000);
+                        var sec=parseInt(ms/1000) -(min*60);
+                        var cent=ms-(sec*1000) -(min*60*1000);
+                        return min+":"+sec+":"+cent;
+                    }
                 }
-                function parar() {
-                    
-                }
+ 
             })()
         </script>
     </body>
