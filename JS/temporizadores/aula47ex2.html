@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+    </head>
+    <body>
+        <h1>Banner</h1>
+        <div class="relogio">
+        </div>
+        <script>
+            (function () {
+                var $relogio=document.querySelector('.relogio');
+                function getHours() {
+                    var data=new Date();
+                    var h=formata(data.getHours());
+                    var m=formata(data.getMinutes());
+                    var s=formata(data.getSeconds());
+                    return h +":"+ m +":"+s;
+                }  
+                function formata(t){
+                    return t<10 ? "0"+t : t;
+                }  
+                
+                function mostraRelogio(atual) {
+                    $relogio.textContent=atual;
+                }
+
+                setInterval(function () {
+                    mostraRelogio(getHours());
+                },1000);
+            })();
+        </script>
+    </body>
+</html>
