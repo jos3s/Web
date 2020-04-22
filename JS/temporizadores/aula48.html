@@ -29,6 +29,7 @@
 
                 function iniciar() {
                     if(rodando) return ;
+                    parar();
                     msClick=Date.now();
                     rodando=true;
                     iniciarCronometro();
@@ -36,15 +37,14 @@
                 function pausar() {
                     if(!$cronometro.value) return
                     if(rodando){
-                        rodando=false;
                         clearInterval(intervalo);
                         msPausar=Date.now();
                         msTempoDecorrido+=(msPausar-msClick);
                     }else{
-                        rodando=true;
                         msClick=Date.now();
                         iniciarCronometro(msTempoDecorrido);
                     }
+                    rodando=!rodando;
                 }
                 
                 function parar() {
@@ -62,20 +62,19 @@
                         $cronometro.value=formataTempo(diferenca + ms);
                     },100)
                 }
+                const MINUTO=60000;
                 
                 function formataTempo(ms) {
                     if(ms<1000){
                         return ms;
-                    }else if(ms<60000){
+                    }else if(ms<MINUTO){
                         var sec=ms/1000;
                         sec=parseInt(sec);
                         var cent=ms-(sec*1000);
                         return sec+":"+cent;
                     }else{
-                        var min=parseInt(ms/60000);
-                        var sec=parseInt(ms/1000) -(min*60);
-                        var cent=ms-(sec*1000) -(min*60*1000);
-                        return min+":"+sec+":"+cent;
+                        var min=parseInt(ms/MINUTO);
+                        return min+":"+formataTempo( ms - (m*MINUTO));
                     }
                 }
  
