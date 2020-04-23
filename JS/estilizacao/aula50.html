@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <style>
+            .teste{
+                background: #ef5350;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testando</h1>
+        <div class="teste" style="color:white;">
+            Apenas um teste
+        </div>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        <p>Eiusmod est elit culpa reprehenderit culpa dolor ea proident sunt consectetur consectetur incididunt. Ullamco ad elit deserunt minim sint magna culpa labore. Minim incididunt deserunt irure duis velit proident ex mollit enim irure occaecat id est eu. Eu dolore dolor Lorem eiusmod.</p>
+        
+        <div class="teste2">teste2</div>
+        <script>
+            var $teste=document.querySelector(".teste");
+            console.log($teste.style.background);
+            //console.log($teste.style.color);
+            console.log('computado', getComputedStyle($teste).background);
+            
+            var $p=document.querySelector("p");
+            console.log($p.offsetHeight, $p.offsetWidth);
+            console.log($p.offsetLeft, $p.offsetTop);
+            
+            var $teste2=document.querySelector(".teste2");
+            console.log($teste2.offsetLeft, $teste2.offsetTop);
+            console.log($teste2.getBoundingClientRect());
+            
+            </script>
+    </body>
+</html>
