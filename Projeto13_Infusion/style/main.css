@@ -251,3 +251,33 @@ img{
     display: block;
     font-weight:600;
 }
+
+@media screen and (min-width:1240px){
+    .header{
+        position:fixed;
+    }
+    .logo-txt{
+       width:25%;
+       box-sizing: border-box;
+    }
+    .header__btnMenu{
+        display:none;
+    }
+    .header__nav{
+        clear: none;
+        float:left;
+        width:75%;
+        max-width:1000px;
+    }
+    .header__nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .header__nav li{
+        border-bottom:none;
+        flex-grow: 1;
+    }
+    .header__nav a{
+        background: white;
+    }
+}
