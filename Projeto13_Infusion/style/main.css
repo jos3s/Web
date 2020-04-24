@@ -11,6 +11,7 @@ img{
     padding-left: 1em;
     padding-right: 1em;
 }
+
 .header{
     width: 100%;
     background: #fff;
@@ -54,11 +55,9 @@ img{
     -ms-transition: .7s ease;
     -o-transition: .7s ease;
 }
+
 .header__nav a:hover{
     color:#63c6ae;
-}
-.header__btnMenu{
-
 }
 .hero{
     height:80vh;
@@ -104,6 +103,21 @@ img{
 .people-cards{
     margin-top:2.5em;
 }
+.people-cards__card:hover{
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
+.people-cards__card:hover .people-cards__avatar img{
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.people-cards__card:hover .people-cards__tittle,
+.people-cards__card:hover .people-cards__txt{
+    color:#63c6ae;
+}
 .people-cards__img{
     width:100%;
 }
@@ -122,6 +136,7 @@ img{
 .people-cards__title{
     color: #737c85;
     font-size:21px;
+    font-weight: normal;
 }
 .people-cards__txt{
     color:#929da5;
