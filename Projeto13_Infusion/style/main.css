@@ -51,6 +51,7 @@ img{
     text-decoration: none;
     font-weight: bold;
     color:#fff;
+    text-align: right;
 }
 .header__nav{
     clear: left;
@@ -287,5 +288,15 @@ img{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap:30px;
+    }
+
+    .content .container{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+    }
+
+    .last-articles__thumbs{
+        grid-template-columns: repeat(6, 1fr);
     }
 }
