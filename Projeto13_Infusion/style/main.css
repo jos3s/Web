@@ -40,6 +40,10 @@ img{
     width: 100%;
     background: #fff;
 }
+.js .header{
+    position: fixed;
+    width: 100%;
+}
 .logo-txt{
     text-transform: uppercase;
     background-color: #63c6ae;
@@ -84,6 +88,21 @@ img{
 .header__nav a:hover{
     color:#63c6ae;
 }
+.header__btnMenu{
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+}
+.js .header__nav{
+    transition: max-height 1s;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+}
+
 .hero{
     height:80vh;
     padding:40px 20px;
@@ -257,7 +276,8 @@ img{
 .footer__logo{
     text-transform: uppercase;
 }
-@media screen and (min-width:1240px){
+
+@media screen and (min-width:1024px){
     .header{
         position:fixed;
     }
