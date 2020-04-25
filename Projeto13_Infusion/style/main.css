@@ -43,6 +43,7 @@ img{
 .js .header{
     position: fixed;
     width: 100%;
+    z-index:10;
 }
 .logo-txt{
     text-transform: uppercase;
@@ -101,6 +102,41 @@ img{
     -moz-transition: max-height 1s;
     -ms-transition: max-height 1s;
     -o-transition: max-height 1s;
+}
+
+.js .laptop-slide{
+    overflow:hidden;
+    color: white;
+}
+.js .laptop-slide .slideshow{
+    position: relative;
+    width:100%;
+    margin: auto;
+    max-width: 950px;
+}
+.js .laptop-slide figure{
+    opacity:0;
+    width:100%;
+    transition: 1s opacity;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.js .laptop-slide figure.show{
+    opacity:1;
+    position: static;
+}
+.js .laptop-slide .prev, .js .laptop-slide .next{
+    z-index:3;
+    position:absolute;
+    top:50%;
+    cursor: pointer;
+}
+.js .laptop-slide .prev{
+    left:10px;
+}
+.js .laptop-slide .next{
+    right:10px;
 }
 
 .hero{
@@ -277,7 +313,7 @@ img{
     text-transform: uppercase;
 }
 
-@media screen and (min-width:1025px){
+@media screen and (min-width:981px){
     .header{
         position:fixed;
     }
