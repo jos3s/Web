@@ -6,6 +6,14 @@
     var menu=new Menu({
         container:".header__nav",
         toggleBtn:".header__btnMenu",
-        widthEnabled:1025
+        widthEnabled:980
     });
+
+    var carousel=new Carousel({
+        container: '.laptop-slide .slideshow',
+        itens: 'figure',
+        btnPrev: '.prev',
+        btnNext: '.next'
+    });
+
 })();
