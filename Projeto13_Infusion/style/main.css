@@ -139,6 +139,49 @@ img{
     right:10px;
 }
 
+.js .quote-slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+}
+.js .quote-slideshow figure h2{
+    margin-top: 0;
+}
+.js .quote-container figure{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    margin: 0;
+    transition: .25s opacity;
+    -webkit-transition: .25s opacity;
+    -moz-transition: .25s opacity;
+    -ms-transition: .25s opacity;
+    -o-transition: .25s opacity;
+}
+.js .quote-container figure.show{
+    opacity:1;
+    position: static;
+}
+.js .quote-slideshow .prev, .js .quote-slideshow .next{
+    z-index:3;
+    position:absolute;
+    top:50%;
+    cursor: pointer;
+}
+.js .quote-slideshow .prev{
+    left:10px;
+}
+.js .quote-slideshow .next{
+    right:10px;
+}
+
 .hero{
     height:80vh;
     padding:40px 20px;
