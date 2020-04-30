@@ -24,7 +24,7 @@ body {
 }
 
 .border {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -38,8 +38,8 @@ body {
   text-align: left;
 }
 .destaque .pratoDestaque {
-  padding: 0.3em;
-  max-height: 300px;
+  padding: 0.5em;
+  max-height: 360px;
   margin-bottom: 0.5em;
   border: 2px solid #750000;
   border-radius: 11px;
@@ -50,8 +50,27 @@ body {
   max-width: 100%;
   max-height: 220px;
 }
-.destaque .pratoDestaque p {
-  font-size: 14px;
+.destaque .pratoDestaque a {
+  text-decoration: none;
+}
+.destaque .pratoDestaque a p {
+  color: black;
+  margin-right: 0.8em;
+}
+.destaque .pratoDestaque a .prato-mais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.destaque .pratoDestaque a i {
+  font-size: 1.5em;
+}
+.destaque .pratoDestaque a :hover p, .destaque .pratoDestaque a :hover i {
+  color: #750000;
+}
+.destaque .prato-none {
+  display: none;
+  overflow: hidden;
 }
 
 .comidas {
@@ -64,7 +83,7 @@ body {
 .comidas .prato {
   width: 100%;
   font-size: 14px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   box-shadow: 0px 0px 19px -15px rgba(0, 0, 0, 0.75);
   border-radius: 11px;
 }
@@ -103,7 +122,14 @@ body {
   transition: 0.2s all;
 }
 .comidas .btn a {
-  margin-top: 1em;
+  margin-top: 5em;
+}
+.comidas .sushi, .comidas .sobremessas, .comidas .pizzas {
+  margin-bottom: 20px;
+}
+.comidas .prato-none, .comidas .col1 .prato-none {
+  display: none;
+  overflow: hidden;
 }
 
 .btn:hover {
@@ -125,6 +151,7 @@ body {
   font-size: 16px;
 }
 .info address i {
+  color: #F9A826;
   margin-right: 1em;
 }
 .info .form {
@@ -210,7 +237,21 @@ footer a:hover {
   background: #F9A826;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 650px) {
+  .destaque {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 900px) {
+  .destaque .pratoDestaque {
+    max-width: 240px;
+  }
+  .destaque .pratoDestaque:nth-child(3) {
+    display: block;
+  }
+
   .comidas .sushi {
     display: flex;
     justify-content: space-between;
@@ -218,6 +259,40 @@ footer a:hover {
   }
   .comidas .sushi .prato {
     max-width: 32%;
+  }
+  .comidas .pizzas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  .comidas .pizzas .prato {
+    max-width: 32%;
+  }
+  .comidas .prato-none, .comidas .col1 .prato-none {
+    display: block;
+  }
+  .comidas .sobremessas {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+  }
+  .comidas .sobremessas .col1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .comidas .sobremessas .col1 div {
+    max-width: 49%;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .destaque .pratoDestaque {
+    max-width: 240px;
+  }
+  .destaque .prato-none {
+    display: block;
   }
 
   .info-flex {
