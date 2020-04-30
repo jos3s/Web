@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Ulisses">
+        <title>Restaurante Fresco</title>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,700&amp;display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ff7538096c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="logo">
+            <img src="img/Cópia de Vermelho Garfo Restaurante Logotipo.png" alt="Restaurante Fresco">
+            <div class="menu">
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-user"></i>
+            </div>
+        </header>
+        <main>
+            <div class="border">
+                <section class="destaque">
+                    <h2>Nossos pratos mais pedidos</h2>
+                    <div class="pratoDestaque">
+                        <img src="img/pizzaLombo.png" alt="">
+                        <h4>Pizza de Calabresa</h4>
+                    </div>
+                    <div class="pratoDestaque">
+                        <img src="img/pizzaPortuguesa.jpg" alt="">
+                        <h4>Pizza de Lombo</h4>
+                    </div>
+                </section>
+            </div>
+            <div class="border">
+                <section class="comidas">
+                    <div class="pizzas">
+                        <h3>Pizzas</h3>
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Quatro Queijos</p>
+                            </a>
+                        </div>
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Quatro Queijos</p>
+                            </a>
+                        </div>
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Quatro Queijos</p>
+                            </a>
+                        </div>
+                       <a href="#" class="btn">Veja outras pizzas</a>
+                    </div>
+                    <h3>Sushi</h3>
+                    <div class="sushi">
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Quatro Queijos</p>
+                            </a>
+                        </div>
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Quatro Queijos</p>
+                            </a>
+                        </div>
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Quatro Queijos</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-right">Veja outros sushis</a>
+                    <div class="sobremessas">
+                        <h3>Sobremesas</h3>
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Quatro Queijos</p>
+                            </a>
+                        </div>
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Frango com Catupiry</p>
+                            </a>
+                        </div>
+                        <div class="prato">
+                            <a href="#">
+                                <img src="img/pizzaPortuguesa.jpg" alt="">
+                                <p>Pizza Portuguesa</p>
+                            </a>
+                        </div>
+                        <a href="#" class="btn">Veja outras sobremesas</a>
+                    </div>
+                </section>
+            </div>
+            <section class="info"> 
+                <div class="border">
+                    <div class="info-flex">
+                        <div class="form">
+                            <h3>Faça aqui o seu pedido:</h3>
+                            <form>
+                                <div id="form-essencial">
+                                    <label >Nome:
+                                        <input type="text" placeholder="Nome"  required >
+                                    </label>
+                                    <label >Telefone:
+                                        <input type="tel" name="numero" id="numero" placeholder="Telefone"  required>
+                                    </label>
+                                </div>
+                                <label for="pedido">Escreva o seu pedido:
+                                    <textarea required name="pedido" id="pedido" cols="30" rows="10" placeholder="Uma pizza de ..."></textarea>
+                                </label>
+                                <div id="fazerpedido">
+                                    <label for="entrega" id="entrega-perg">É para entrega?
+                                        <label required for="entrega">Sim
+                                            <input type="radio" name="entrega" id="entrega" >
+                                        </label>
+                                        <label required for="entrega">Não
+                                            <input type="radio" name="entrega" id="entrega" >
+                                        </label>
+                                    </label>
+                                    <button type="submit" id="enviarPedido">Fazer Pedido</button>    
+                                </div>                            
+                            </form>
+                        </div>
+                        <div class="contato">
+                            <address>
+                                <h3>Contato</h3>
+                                <p><i class="fa fa-home"></i> 33032, Veum Stravenue</p>
+                                <p><i class="fas fa-city"></i> West Barney</p>
+                                <p><i class="fa fa-phone"></i> 836-394-0566</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="border">
+                <section id="sobre">
+                    <h3>Sobre nós</h3>
+                    <p>In aute magna nulla aliqua id aliqua ullamco irure amet velit laborum ad. Occaecat enim minim laborum tempor non dolor cillum nisi pariatur cillum ut qui eiusmod. Labore elit ut Lorem occaecat exercitation Lorem excepteur et fugiat cillum exercitation. Officia adipisicing consectetur velit cupidatat reprehenderit deserunt id do nostrud.</p>
+                </section>
+            </div>
+        </main>
+        <div class="footer">
+            <footer>
+                <div class="border footer-flex">
+                    <div>
+                        <p>Copyright &copy; 2020 <br> Restaurante Fresco</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#"><i class=" fab fa-facebook-f"></a></i></li>
+                            <li><a href="#"><i class=" fab fa-instagram"></a></i></li>
+                            <li><a href="#"><i class=" fab fa-twitter"></a></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

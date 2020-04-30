@@ -1,0 +1,289 @@
+$cor-logo: #F9A826;
+$cor-des1:#750000;
+$cor-des2:#0D5280;
+$cor-white: #fff;
+$fundo: #EBE9E1;
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px 1px grey;
+    margin-bottom: 2em;
+    padding: 1em 2em;
+    .menu{
+    }
+    i{
+        margin-left: 1em;
+        font-size: 1.5em;
+        color: $cor-logo;
+        text-align: right
+    }
+    img{
+        height: 100px;
+    }
+}
+.border{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.destaque{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: left;
+    }
+    .pratoDestaque{
+        padding: .3em;
+        max-height: 300px;
+        margin-bottom: .5em;
+        border: 2px solid $cor-des1;
+        border-radius: 11px;
+        box-sizing: border-box;
+        box-shadow:0px 0px 25px -15px  rgba(0, 0, 0, 0.75) ;
+        img{
+            max-width: 100%;
+            max-height: 220px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+.comidas{
+    width: 100%;
+    h3{
+        padding-top: 2em;
+        padding-bottom: .6em;
+    }
+    .prato{
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 2em;
+        box-shadow:0px 0px 19px -15px  rgba(0, 0, 0, 0.75) ;
+        border-radius: 11px;
+        a{
+            border-radius: 11px;
+            border: 2px solid $fundo;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            border-color: $cor-des1;
+            color: $cor-des1;
+        }
+        img{
+            margin-left: 7px;
+            max-width: 130px;
+        }
+        p{
+            margin-left: 1em;
+            font-size: 1.4em;
+        }
+    }
+    .btn{
+        box-sizing: border-box;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        background-color: $cor-des1;
+        font-size: 14px;
+        padding: 1em;
+        border: 2px solid $cor-des1;
+        border-radius: 111px;
+        color: white;
+        transition: .2s all;
+        a{
+            margin-top: 1em;
+        }
+    }
+}
+.btn:hover{
+    color: $cor-des1;
+    background-color: $cor-white;
+    border: 2px solid $cor-des1;
+}
+.info{
+    font-size: 16px;
+    margin-top: 2em;
+    padding: 1em;
+    background: $fundo;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    address{
+        p{
+            font-size: 16px;
+        }
+        i{
+            margin-right: 1em;
+        }
+    }
+    .form{
+        width: 100%;
+        margin-bottom: 1.5em;
+        input, textarea{
+            width: 100%;
+            padding: .5em;
+            margin-top: .75em;
+            margin-bottom: .75em;
+            border: 1px solid $cor-white;
+            border-radius: 11px;
+            resize: none;
+        }
+    }
+    #entrega-perg{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    input[type="radio"]{
+        width: auto;
+    }
+    #enviarPedido{
+        color: white;
+        background-color: $cor-logo;
+        border: none;
+        border-radius: 111px;
+        margin-top: 1em;
+        margin-right: 1em;
+        padding: .5em;
+        width: 100%;
+        cursor: pointer;
+        outline: 0;
+    }
+}
+
+#sobre{
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+footer{
+    color: white;
+    padding: .8em;
+    background-color: $cor-des1;
+    text-align: center;
+    p{
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        padding: .4em;
+        color: $fundo;
+    }
+    a{
+        color: rgba(255,255, 255, 0.5);
+        transition: .5s ease-in-out;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -ms-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+    }
+    a:hover{
+        color: $cor-white;
+    }
+}
+
+::-webkit-scrollbar {
+    width:8px;
+    height: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background:$fundo;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $cor-logo;
+}
+
+@media screen and (min-width:1000px){
+    .comidas{
+        .sushi{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+            .prato{
+                max-width: 32%;
+            }
+        }
+    }
+    .info-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .form{
+            flex: 0 1 60%;
+            margin-bottom: .8em;
+            margin-right: 4em;
+            width: 100%;
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+            #form-essencial{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            #form-essencial label{
+                flex: 0 1 47%;
+            }
+            textarea{
+                height: 100px;
+            }
+            #fazerpedido label{
+                display: inline;
+            }
+            #fazerpedido label label{
+                margin-left: .5em;
+            }
+            #fazerpedido{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            #fazerpedido label, #fazerpedido button{
+                flex: 0 1 47%;
+            }
+            #enviarPedido{
+                margin-top: .3em;
+                margin-right: 0;
+            }
+        }
+        .contato{
+            flex:0 1 30%;
+        }
+    }
+    .footer-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        div:nth-child(1){
+            margin-right: 1em;
+        }
+        div:nth-child(2) li a{
+            font-size: 1.3em;
+            margin-right: .2em;
+        }
+    }
+}
