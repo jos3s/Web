@@ -1,0 +1,18 @@
+$cor-logo: #F9A826;
+$cor-des1:#750000;
+$cor-des2:#0D5280;
+$cor-white: #fff;
+$fundo: #EBE9E1;
+
+::-webkit-scrollbar {
+    width:8px;
+    height: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background:$fundo;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $cor-logo;
+}

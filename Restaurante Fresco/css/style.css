@@ -1,6 +1,14 @@
-body {
-  font-family: "Libre Franklin", sans-serif;
-  font-size: 20px;
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EBE9E1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F9A826;
 }
 
 .logo {
@@ -21,6 +29,126 @@ body {
 }
 .logo img {
   height: 100px;
+}
+
+footer {
+  color: white;
+  padding: 1em;
+  background-color: #750000;
+  text-align: center;
+}
+footer p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer li {
+  display: inline-block;
+  padding: 0.4em;
+  color: #EBE9E1;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+footer a:hover {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EBE9E1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F9A826;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EBE9E1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F9A826;
+}
+
+.btn {
+  outline: 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  background-color: #750000;
+  font-size: 14px;
+  padding: 1em;
+  border: 2px solid #750000;
+  border-radius: 111px;
+  color: white;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.btn .btn a {
+  margin-top: 5em;
+}
+
+.btn-amarelo {
+  background-color: #F9A826;
+  margin-top: 1em;
+  margin-right: 1em;
+  border: 2px solid #F9A826;
+  transition: 0.5s all ease-in-out;
+}
+
+.btn-up {
+  background-color: #F9A826;
+  margin-left: 80%;
+  border: 2px solid #F9A826;
+  padding: 1.3em;
+  text-align: center;
+  border-radius: 100%;
+}
+.btn-up i {
+  font-size: 1.3em;
+}
+
+.btn:hover {
+  color: #750000;
+  background-color: #fff;
+  border: 2px solid #750000;
+}
+
+.btn-amarelo:hover {
+  color: black;
+  background-color: #F9A826;
+  opacity: 0.8;
+  border: 2px solid #F9A826;
+}
+
+.btn-up:hover {
+  color: white;
+  background-color: #F9A826;
+  border: 2px solid #F9A826;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
 }
 
 .border {
@@ -108,22 +236,6 @@ body {
   margin-left: 1em;
   font-size: 1.4em;
 }
-.comidas .btn {
-  box-sizing: border-box;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  background-color: #750000;
-  font-size: 14px;
-  padding: 1em;
-  border: 2px solid #750000;
-  border-radius: 111px;
-  color: white;
-  transition: 0.2s all;
-}
-.comidas .btn a {
-  margin-top: 5em;
-}
 .comidas .sushi, .comidas .sobremessas, .comidas .pizzas {
   margin-bottom: 20px;
 }
@@ -132,15 +244,9 @@ body {
   overflow: hidden;
 }
 
-.btn:hover {
-  color: #750000;
-  background-color: #fff;
-  border: 2px solid #750000;
-}
-
 .info {
   font-size: 16px;
-  margin-top: 2em;
+  margin-top: 3em;
   padding: 1em;
   background: #EBE9E1;
   display: flex;
@@ -167,7 +273,7 @@ body {
   border-radius: 11px;
   resize: none;
 }
-.info #entrega-perg {
+.info #fazerpedido {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -175,66 +281,10 @@ body {
 .info input[type=radio] {
   width: auto;
 }
-.info #enviarPedido {
-  color: white;
-  background-color: #F9A826;
-  border: none;
-  border-radius: 111px;
-  margin-top: 1em;
-  margin-right: 1em;
-  padding: 0.5em;
-  width: 100%;
-  cursor: pointer;
-  outline: 0;
-}
 
 #sobre {
   padding-bottom: 1em;
   padding-top: 1em;
-}
-
-footer {
-  color: white;
-  padding: 0.8em;
-  background-color: #750000;
-  text-align: center;
-}
-footer p {
-  font-size: 13px;
-  line-height: 1.6;
-}
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-footer li {
-  display: inline-block;
-  padding: 0.4em;
-  color: #EBE9E1;
-}
-footer a {
-  color: rgba(255, 255, 255, 0.5);
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-}
-footer a:hover {
-  color: #fff;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #EBE9E1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #F9A826;
 }
 
 @media screen and (min-width: 650px) {
@@ -242,6 +292,10 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .btn-up {
+    margin-left: 90%;
   }
 }
 @media screen and (min-width: 900px) {
