@@ -35,6 +35,10 @@
         font-size: 1.3em;
     }
 }
+#enviarEmail{
+    max-width: 30%;
+    margin: 0;
+}
 .btn:hover{
     color: $cor-des1;
     background-color: $cor-white;

@@ -8,7 +8,20 @@
     box-shadow: 0px 0px 1px 1px grey;
     margin-bottom: 2em;
     padding: 1em 2em;
-    .menu{
+    .menu a{
+        color: $cor-logo;
+        text-decoration: none;
+        padding: .7em;
+        border: 1px solid $cor-logo;
+        border-radius: 11px;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        -ms-border-radius: 11px;
+        -o-border-radius: 11px;
+    }
+    .menu a:hover{
+        color: white;
+        background-color: $cor-logo;
     }
     i{
         margin-left: 1em;
