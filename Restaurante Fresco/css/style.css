@@ -225,6 +225,9 @@ body {
   width: 100%;
   margin-top: 2rem;
 }
+.comidas h3 {
+  margin-top: 2.5em;
+}
 .comidas .prato {
   width: 100%;
   font-size: 14px;
