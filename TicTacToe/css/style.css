@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+
+:root{
+    --darkBlue:#003D52;
+    --blue: #3C7E8C;
+    --plays: rgb(28, 119, 139);
+}
+
+body{
+    margin: 70px 0;
+    background-color: var(--darkBlue);
+    font-family: 'Open Sans', sans-serif;
+
+}
+h1{
+    color: var(--blue);
+    margin: 20px auto 40px;
+    text-align: center;
+}
+.game{
+    background-color: var(--blue);
+    width: 320px;
+    height: 320px;
+    margin: auto auto 40px;
+}
+.board{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:10px;
+    height:100%;
+}
+.box{
+    box-sizing:border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: var(--darkBlue);
+    height: 100px;
+    width: 100px;
+}
+i{
+    color: var(--blue);
+    line-height:0;
+    font-size:80px;
+    text-align: center;
+}
+
+.info{
+    color: white;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.info p{
+    font-size: 24px;
+}
+.info button{
+    padding: 15px;
+    border: 2px solid var(--darkBlue);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius:11px;
+    background-color: var(--blue);
+}
+
+@media screen and (min-width:500px){
+    .info{
+        width: 60%;
+        justify-content: center;
+    }
+    .info p, .info button{
+        margin: 0 40px;
+    }
+}
