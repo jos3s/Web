@@ -54,9 +54,11 @@ function criarElemento(tipo) {
 
 function criarMSG(jogador, msg) {
     if(!jogador){
-        msg.innerText="É a vez do X";
+        msg.innerText="É a vez do ";
+        msg.appendChild(criarIcone('times'));
     }else{
-        msg.innerText="É a vez do O";
+        msg.innerText="É a vez do ";
+        msg.appendChild(criarIcone('circle'));
     }
 }
 
@@ -73,4 +75,4 @@ function criarBoxs(board){
     jogada=0;
 }
 
-
+criarMSG(jogada,msg);
