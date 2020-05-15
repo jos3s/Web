@@ -1,5 +1,6 @@
 const msg=document.querySelector(".msg");
 var jogada=0; //$ X
+criarMSG(false,msg);
 
 document.addEventListener('click', (el)=>{
     e=el.target;
@@ -7,8 +8,8 @@ document.addEventListener('click', (el)=>{
         if(jogada%2==0){
             if(!(e.querySelector(".box > i"))){
                 jogar(true, e);
-                criarMSG(true,msg);
                 jogada++;
+                criarMSG(true,msg);
                 ganhador();
             }
             if(jogada==9) {
@@ -16,10 +17,12 @@ document.addEventListener('click', (el)=>{
                 msg.textContent='Partida Encerrada'; 
             }
         }else{
-            jogar(false, e);
-            criarMSG(false,msg);
-            jogada++;
-            ganhador();
+            if(!(e.querySelector(".box > i"))){
+                jogar(false, e);
+                jogada++;
+                criarMSG(false,msg);
+                ganhador();
+            }
             if(jogada==9){
                 ganhador();
                 msg.textContent='Partida Encerrada'; 
@@ -28,7 +31,7 @@ document.addEventListener('click', (el)=>{
     }
     if(e.classList.contains('reiniciar')){
         reiniciar();
-        criarMSG(jogada, msg);
+        criarMSG(false, msg);
     }
 });
 
@@ -60,7 +63,6 @@ function criarElemento(tipo) {
     return document.createElement(tipo);
 }
 
-criarMSG(jogada,msg);
 function criarMSG(jogador, msg) {
     if(!jogador){
         msg.innerText="É a vez do ";
@@ -74,6 +76,7 @@ function criarMSG(jogador, msg) {
 var jogadorX=0;
 var jogadorO=0;
 function definirGanhador(ganhador) {
+    jogada=0;
     if(ganhador==='x'){
         jogadorX++;
         const X=document.querySelector(".playerX");
@@ -105,9 +108,6 @@ function criarBoxs(board){
 function ganhador() {
     const board=document.querySelector(".board");
     let x=pegarIds(board);
-    console.log(linha(x));
-    console.log(coluna(x));
-    console.log(diagonal(x));
     if(linha(x)!==undefined){
         definirGanhador(linha(x));
         reiniciar();
@@ -150,7 +150,8 @@ function pegarIds(board) {
                 id=box.childNodes[1];
                 id=id.getAttribute('id');
                 ids.push(id);
-            }else if(box.childNodes[0]!=='text'){
+            }
+            if(box.childNodes[0].nodeName!=='#text'){
                 id=box.childNodes[0];
                 id=id.getAttribute('id');
                 ids.push(id);
