@@ -140,8 +140,8 @@ function diagonal(x) {
     return undefined;
 }
 
-function pegarIds(board) {
-    let boxs=board.querySelectorAll('.box');
+function pegarIds() {
+    let boxs=document.querySelectorAll('.box');
     const ids=[];
     for(let box of boxs){
         let id;
@@ -150,14 +150,16 @@ function pegarIds(board) {
                 id=box.childNodes[1];
                 id=id.getAttribute('id');
                 ids.push(id);
+                continue;
             }
             if(box.childNodes[0].nodeName!=='#text'){
                 id=box.childNodes[0];
                 id=id.getAttribute('id');
                 ids.push(id);
-            }
+            }else{
+                ids.push(undefined);
+            }    
         }
-        else ids.push(undefined);
     }
     return ids;
 }
