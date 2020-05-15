@@ -122,7 +122,8 @@ function ganhador() {
 function linha(x) {
     if(x[0] === x[1] && x[0] === x[2] && x[0] !== undefined) return x[0];        
     if(x[3] === x[4] && x[3] === x[5] && x[3] !== undefined) return x[3];        
-    if(x[6] === x[7] && x[6] === x[8] && x[6] !== undefined) return x[6];        
+    if(
+        x[6] === x[7] && x[6] === x[8] && x[6] !== undefined) return x[6];        
     return undefined;
     
 }
@@ -152,13 +153,17 @@ function pegarIds() {
                 ids.push(id);
                 continue;
             }
-            if(box.childNodes[0].nodeName!=='#text'){
+            if(box.childNodes[0].nodeName!=='#text' && box.childNodes.length===1){
                 id=box.childNodes[0];
                 id=id.getAttribute('id');
                 ids.push(id);
-            }else{
+                continue;
+            }
+            if(box.childNodes[0].nodeName==='#text'){
                 ids.push(undefined);
-            }    
+            } 
+        }else{
+            ids.push(undefined);
         }
     }
     return ids;
