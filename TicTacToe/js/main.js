@@ -14,7 +14,8 @@ document.addEventListener('click', (el)=>{
             }
             if(jogada==9) {
                 ganhador();
-                msg.textContent='Partida Encerrada'; 
+                reiniciar();
+                criarMSG(false,msg);
             }
         }else{
             if(!(e.querySelector(".box > i"))){
@@ -25,7 +26,8 @@ document.addEventListener('click', (el)=>{
             }
             if(jogada==9){
                 ganhador();
-                msg.textContent='Partida Encerrada'; 
+                reiniciar();
+                criarMSG(false,msg);
             }
         }
     }
