@@ -112,13 +112,13 @@ function ganhador() {
     let x=pegarIds(board);
     if(linha(x)!==undefined){
         definirGanhador(linha(x));
-        reiniciar();
+        setTimeout(reiniciar, 1000);
     }else if(coluna(x)!==undefined){
        definirGanhador(coluna(x));
-       reiniciar();
+       setTimeout(reiniciar, 1000);
     }else if(diagonal(x)!==undefined){
         definirGanhador(diagonal(x));
-        reiniciar();
+        setTimeout(reiniciar, 1000);
     }
 }
 function linha(x) {
