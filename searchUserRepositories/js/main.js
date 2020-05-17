@@ -4,7 +4,7 @@ const form=document.querySelector('form');
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     if(input.value!==''){
-        axios.get(`http://api.github.com/users/${input.value}/repos`)
+        axios.get(`https://api.github.com/users/${input.value}/repos`)
             .then(dados=> {
                 criarLista(dados.data);
             })
